@@ -124,8 +124,9 @@ img {
 
 
 .article {
- font-size: clamp(2rem, 5vw, 3rem);
+ font-size: 6vw;
 }
+
 
 
 
