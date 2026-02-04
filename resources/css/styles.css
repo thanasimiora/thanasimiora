@@ -13,7 +13,7 @@
   border-radius: 5px;
 }
 
-#menu:active {   background-color: #ba0e09; }
+.dropdown-item:active {   background-color: #ba0e09; }
               
 a {
   color: black;
@@ -129,6 +129,7 @@ img {
  font-size: 22px;
   text-align: justify;
 }
+
 
 
 
