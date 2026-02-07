@@ -7,7 +7,8 @@ var articles = [   {
     author: "SAFARI SNIPER",
     link: "axasta4",
     text: " Lore22m ipsum",
-  },{
+  },
+{
     id: 21,
     date: "8/2/2026",
     title:
@@ -269,6 +270,7 @@ const script = document.createElement("script");
 script.src = "/thanasimiora/resources/javascript/comments.js";        // or inline script
 script.defer = true;              // optional but recommended
 document.body.appendChild(script);
+
 
 
 
