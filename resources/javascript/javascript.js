@@ -1,4 +1,25 @@
-var articles = [
+var articles = [ {
+    id: 21,
+    date: "8/2/2026",
+    title:
+      "Ο θάνατος του Ιωάννη Β’ Κομνηνού: Επίθεση από αγριόχοιρο ή κάποιο παρεξηγημένο Pokemon;",
+    pic: "pokemon",
+    category: "ΙΣΤΟΡΙΑ",
+    author: "Ζήνων, ο Ταρασικοδίσσας ",
+    link: "pokemon",
+    text: " Lorem ipsum",
+  },
+  {
+    id: 20,
+    date: "7/2/2026",
+    title:
+      "Ο Χαμένος Αρχαίος Θρύλος του Πιγκάλ — Το Ιερό Εργαλείο που Διαμόρφωσε τον Πολιτισμό.",
+    pic: "pigal",
+    category: "ΙΣΤΟΡΙΑ",
+    author: "Father Diablo",
+    link: "pigal",
+    text: " Lorem ipsum",
+  },
   {
     id: 19,
     date: "7/2/2026",
@@ -239,6 +260,7 @@ const script = document.createElement("script");
 script.src = "/thanasimiora/resources/javascript/comments.js";        // or inline script
 script.defer = true;              // optional but recommended
 document.body.appendChild(script);
+
 
 
 
