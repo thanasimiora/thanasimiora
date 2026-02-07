@@ -115,8 +115,8 @@
   <div id="comments-list" class="comments-list"></div>
 
   <h4>Γράψτε ένα σχόλιο......</h4>
-  <input type="text" id="comment-name" placeholder="Your name (optional)" class="comment-input">
-  <textarea id="comment-text" placeholder="Your comment" class="comment-textarea"></textarea>
+  <input type="text" id="comment-name" placeholder="Όνομα (Προαιρετικά)" class="comment-input">
+  <textarea id="comment-text" placeholder="Σχόλιο" class="comment-textarea"></textarea>
   <button onclick="postComment()" class="comment-button">Δημοσίευση</button>
 </div>
 
@@ -212,7 +212,7 @@ async function loadComments() {
     const comments = await res.json();
     const container = document.getElementById("comments-list");
     container.innerHTML = "";
-    if (comments.length === 0) container.innerHTML = "<p>No comments yet.</p>";
+    if (comments.length === 0) container.innerHTML = "<p>Δεν υπάρχουν σχόλια ακόμη.</p>";
     comments.forEach(c => {
       const div = document.createElement("div");
       div.className = "comment-item";
@@ -258,6 +258,7 @@ loadComments();
    
 
 </html>
+
 
 
 
