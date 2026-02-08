@@ -1,4 +1,13 @@
-var articles = [   {
+var articles = [ {
+    id: 23,
+    date: "8/2/2026",
+    title: "Το Τάγμα των Ταγμάτων",
+    pic: "illuminati",
+    category: "ΙΣΤΟΡΙΑ",
+    author: "Idi Amin Dada Oumee",
+    link: "illuminati",
+    text: " Lore22m ipsum",
+  },   {
     id: 22,
     date: "8/2/2026",
     title: "Άχαστα σημεία της Κυριακής #4",
@@ -270,6 +279,7 @@ const script = document.createElement("script");
 script.src = "/thanasimiora/resources/javascript/comments.js";        // or inline script
 script.defer = true;              // optional but recommended
 document.body.appendChild(script);
+
 
 
 
