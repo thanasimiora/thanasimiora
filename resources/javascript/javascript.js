@@ -261,7 +261,7 @@ document.getElementById("crypto_container").innerHTML =
   '<div class="crypto"><gecko-coin-price-static-headline-widget locale="en"    outlined="false" coin-ids="popcat,simon-s-cat, poocoin,pepe,floki,dogecoin,hamster-kombat,shiba-inu,pepe-trump"  initial-currency="usd"></gecko-coin-price-static-headline-widget>  </div> <div aria-hidden class="crypto"> <gecko-coin-price-static-headline-widget  locale="en"  outlined="false"  coin-ids="popcat,poocoin,pepe,floki,dogecoin,hamster-kombat,shiba-inu,pepe-trump"  initial-currency="usd" ></gecko-coin-price-static-headline-widget>  </div>';
 
 document.getElementById("footer").innerHTML =
-  '<div class="footer-children col-md-4 d-flex align-items-center">  <a id="footer-text" href="/oroi.html">Όροι Χρήσης</a>  <img    src="resources/images/logo_footer.png"    alt="logo"    width="100%"    height="100px"  /><a id="footer-text" href="/epikoinwnia.html">Επικοινωνία</a></div>';
+  '<div class="footer-children col-md-4 d-flex align-items-center">  <a id="footer-text" href="/thanasimiora/oroi.html">Όροι Χρήσης</a>  <img    src="/thanasimiora/resources/images/logo_footer.png"    alt="logo"    width="100%"    height="100px"  /><a id="footer-text" href="/thanasimiora/epikoinwnia.html">Επικοινωνία</a></div>';
 
 document.getElementById("comments-section").innerHTML =
   '<h3>Σχόλια</h3>      <div id="comments-list" class="comments-list"></div>      <h4>Γράψτε ένα σχόλιο...</h4>      <input        type="text"        id="comment-name"        placeholder="Όνομα (Προαιρετικά)"        class="comment-input"      />      <textarea        id="comment-text"        placeholder="Σχόλιο"        class="comment-textarea"      ></textarea>      <button onclick="postComment()" class="comment-button">Δημοσίευση</button>   ';
@@ -270,6 +270,7 @@ const script = document.createElement("script");
 script.src = "/thanasimiora/resources/javascript/comments.js";        // or inline script
 script.defer = true;              // optional but recommended
 document.body.appendChild(script);
+
 
 
 
