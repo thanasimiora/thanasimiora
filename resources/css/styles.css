@@ -99,11 +99,15 @@ img {
 }
 
 .footer {
-  display: flex;
-  justify-content: space-around;
   background-color: #ba0e09;
-  color: #ffbf00;
+  justify-items: center;
   height: 100px;
+}
+
+.footer-children {
+  display: flex;
+  justify-content: space-between;
+  color: #ffbf00;
 }
 
 .template1container {
@@ -161,6 +165,14 @@ img {
   text-justify: inter-word;
   width: 75%;
 }
+
+#footer-text {
+  color: #ffbf00;
+  font-size: large;
+  text-decoration: none;
+  font-weight: 500;
+}
+
 
 /* σχόλια */
 .comments-container {
@@ -244,6 +256,7 @@ img {
 }
 
 /* τελος σχολιων */
+
 
 
 
