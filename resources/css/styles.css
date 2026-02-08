@@ -4,11 +4,7 @@
 
 body{min-height: 100vh;}
 
-footer {
-  background: #222;
-  color: white;
-  padding: 1rem;
-}
+
 .topbar {
   display: flex;
   background-color: #ba0e09;
@@ -267,6 +263,7 @@ img {
 }
 
 /* τελος σχολιων */
+
 
 
 
