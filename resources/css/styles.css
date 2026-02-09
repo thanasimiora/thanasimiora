@@ -12,6 +12,10 @@ footer {
   margin-top: auto;
 }
 
+#news {
+  width: 75%;
+  align-self: center;
+}
 
 
 .topbar {
@@ -272,6 +276,7 @@ img {
 }
 
 /* τελος σχολιων */
+
 
 
 
