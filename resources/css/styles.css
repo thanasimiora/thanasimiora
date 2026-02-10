@@ -13,7 +13,7 @@ footer {
 }
 
 #news {
-  width: 60%;
+  width: 75%;
   align-self: center;
 }
 
@@ -85,12 +85,12 @@ a {
 
 .newsdiv {
   position: relative;
-  width: 50%vw;
+  width: 75%vw;
   /* background-color: yellow; */
 }
 
 img {
-  width: 60%vw;
+  width: 75%vw;
 }
 .category {
   text-align: center;
@@ -276,6 +276,7 @@ img {
 }
 
 /* τελος σχολιων */
+
 
 
 
