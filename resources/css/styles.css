@@ -81,6 +81,7 @@ a {
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
+    align-content: center;
 }
 
 .newsdiv {
@@ -276,6 +277,7 @@ img {
 }
 
 /* τελος σχολιων */
+
 
 
 
