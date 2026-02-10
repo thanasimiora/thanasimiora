@@ -1,4 +1,23 @@
 var articles = [ 
+  //               {
+  //   id: 28,
+  //   date: "11/2/2026",
+  //   title: "Οι Κόντρες των Αμαξών: Όταν τα Άλογα Ήταν… τα Turbo του Παρελθόντος",
+  //   pic: "amaxa",
+  //   category: "ΤΕΧΝΟΛΟΓΙΑ",
+  //   author: "Father Diablo",
+  //   link: "amaxa",
+  //   text: " Lore22m ipsum",
+  // },      {
+  //   id: 27,
+  //   date: "11/2/2026",
+  //   title: "Σελήνη: Νεκρός Δορυφόρος ή Ζωοφόρος Πλανήτης",
+  //   pic: "moon",
+  //   category: "ΦΥΣΙΚΗ",
+  //   author: "ROBERT MUGABE jr",
+  //   link: "moon",
+  //   text: " Lore22m ipsum",
+  // },  
         {
     id: 26,
     date: "10/2/2026",
@@ -350,6 +369,7 @@ const script = document.createElement("script");
 script.src = "/thanasimiora/resources/javascript/comments.js";        // or inline script
 script.defer = true;              // optional but recommended
 document.body.appendChild(script);
+
 
 
 
