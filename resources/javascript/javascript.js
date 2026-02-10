@@ -290,7 +290,7 @@ function combineTexts(articles) {
    result +=
       '<div class="newscontainer"><div><div class="newsdiv"><a href="temp/template1.html?text=' +
       encodeURIComponent(article.id) +
-      ' onclick="saveText()><img src="/thanasimiora/resources/images/' +
+      '><img src="/thanasimiora/resources/images/' +
       article.pic +
       '.png" alt="article"/></a><h6 class="category"> ' +
       article.category +
@@ -298,7 +298,7 @@ function combineTexts(articles) {
       article.date +
       '</h5></div><a href="temp/template1.html?text=' +
       encodeURIComponent(article.id) +
-      ' onclick="saveText()><h1 id="title">' +
+      '><h1 id="title">' +
       article.title +
       "</h1></a></div>";
   });
@@ -329,7 +329,7 @@ function filterArticles(cat) {
     result +=
       '<div class="newscontainer"><div><div class="newsdiv"><a href="temp/template1.html?text=' +
       encodeURIComponent(article.id) +
-      ' onclick="saveText()><img src="/thanasimiora/resources/images/' +
+      '><img src="/thanasimiora/resources/images/' +
       article.pic +
       '.png" alt="article"/></a><h6 class="category"> ' +
       article.category +
@@ -337,7 +337,7 @@ function filterArticles(cat) {
       article.date +
       '</h5></div><a href="temp/template1.html?text=' +
       encodeURIComponent(article.id) +
-      ' onclick="saveText()><h1 id="title">' +
+      '><h1 id="title">' +
       article.title +
       "</h1></a></div>";
     }
@@ -393,6 +393,7 @@ function articlepage() {
 
   document.getElementById("testing").innerHTML = rr;
 }
+
 
 
 
