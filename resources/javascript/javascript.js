@@ -296,11 +296,11 @@ function combineTexts(articles) {
       article.category +
       '</h6></div><h5 id="date">' +
       article.date +
-      '</h5></div><a href="/thanasimiora/temp/' +
+      '</h5><a href="/thanasimiora/temp/' +
       article.link +
       '.html"><h1 id="title">' +
       article.title +
-      "</h1></a></div>";
+      "</h1></a></div></div>";
   });
   return result.trim();
 }
@@ -335,11 +335,11 @@ function filterArticles(cat) {
         article.category +
         '</h6></div><h5 id="date">' +
         article.date +
-        '</h5></div><a href="temp/' +
+        '</h5><a href="temp/' +
         article.link +
         '.html"><h1 id="title">' +
         article.title +
-        "</h1></a></div>";
+        "</h1></a></div></div>";
     }
 
     
@@ -369,6 +369,7 @@ const script = document.createElement("script");
 script.src = "/thanasimiora/resources/javascript/comments.js";        // or inline script
 script.defer = true;              // optional but recommended
 document.body.appendChild(script);
+
 
 
 
