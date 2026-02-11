@@ -354,6 +354,14 @@ function filterArticles(cat) {
         document.getElementById("testing");
       newstemplate1.innerHTML = result
       document.getElementById("comments-section").innerHTML ="";
+} else {
+      const newstemplate1 =
+        document.getElementById("epikoinonia");
+      newstemplate1.innerHTML = result
+      document.getElementById("comments-section").innerHTML ="";
+
+
+      
     }
 
   });
@@ -399,6 +407,7 @@ function articlepage() {
 
   document.getElementById("testing").innerHTML = rr;
 }
+
 
 
 
