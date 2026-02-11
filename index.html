@@ -25,8 +25,6 @@
     <!-- news -->
     <div id="news"></div>      
     <!-- end news -->
-    <nav><ul class="pagination" id="pagination"></ul></nav>
-
   </body>
 
   <!-- footer -->
@@ -38,54 +36,5 @@
   ></script>
   <script src="resources/javascript/javascript.js"></script>
   <script src="https://widgets.coingecko.com/gecko-coin-price-static-headline-widget.js"></script>
-      <script>
- function initPagination() {
-    const itemsPerPage = 10;
-    const items = document.querySelectorAll(".newscontainer");
-    const pagination = document.getElementById("pagination");
-
-    pagination.innerHTML = ""; // reset pagination
-
-    const pageCount = Math.ceil(items.length / itemsPerPage);
-    if (pageCount === 0) return;
-
-    function showPage(page) {
-      items.forEach((item, index) => {
-        item.style.display =
-          index >= (page - 1) * itemsPerPage && index < page * itemsPerPage
-            ? "block"
-            : "none";
-      });
-
-      document.querySelectorAll(".page-item")
-        .forEach(li => li.classList.remove("active"));
-
-      document.getElementById(`page-${page}`).classList.add("active");
-    }
-
-    for (let i = 1; i <= pageCount; i++) {
-      const li = document.createElement("li");
-      li.className = "page-item";
-      li.id = `page-${i}`;
-
-      const a = document.createElement("a");
-      a.className = "page-link";
-      a.href = "#";
-      a.innerText = i;
-      a.onclick = (e) => {
-        e.preventDefault();
-        showPage(i);
-      };
-
-      li.appendChild(a);
-      pagination.appendChild(li);
-    }
-
-    showPage(1);
-  }
-    </script>
 </html>
-
-
-
 
