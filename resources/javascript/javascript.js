@@ -311,12 +311,11 @@ function combineTexts(articles) {
 
 const newz = combineTexts(articles);
 
-var paginationbar='  <nav><ul class="pagination" id="pagination"></ul></nav>'
 
 
 const newsEl = document.getElementById("news");
 if (newsEl) {
-  newsEl.innerHTML = newz + paginationbar;
+  newsEl.innerHTML = newz;
 }
 
 document.addEventListener("click", function (e) {
@@ -351,11 +350,11 @@ function filterArticles(cat) {
 
     
     if (newsEl) {
-      newsEl.innerHTML = result + paginationbar;
+      newsEl.innerHTML = result ;
     } else {
       const newstemplate1 =
         document.getElementById("testing");
-      newstemplate1.innerHTML = result + paginationbar
+      newstemplate1.innerHTML = result ;
       document.getElementById("comments-section").innerHTML ="";
       
     }
@@ -451,6 +450,7 @@ const itemsPerPage = 10;
 
 
 // end pagination
+
 
 
 
