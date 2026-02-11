@@ -1,14 +1,7 @@
 const API_URL =
   "https://script.google.com/macros/s/AKfycby-C1jB5kHoELxa__j5k09aJIlpafvAMCp923kKRJvshqExHGhD4mqHys-GDX235ZYUaQ/exec";
-const params = new URLSearchParams(window.location.search);
-const text = Number(params.get("text"));
-articles=28
-const v = Number.isFinite(text)
-  ? Math.max(0, articles - text)
-  : articles;
 
-const PAGE_ID = `${window.location.pathname}?text=${v}`;
-
+const PAGE_ID = window.location.search ;
 // Fetch and display comments
 async function loadComments() {
   try {
@@ -51,6 +44,7 @@ async function postComment() {
 }
 
 loadComments();
+
 
 
 
