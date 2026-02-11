@@ -41,7 +41,7 @@ async function loadComments() {
 
 async function postComment() {
   const name =
-    document.getElementById("comment-name").value || "Anonymous";
+    document.getElementById("comment-name").value || "Ανώνυμος";
   const comment =
     document.getElementById("comment-text").value.trim();
 
@@ -72,6 +72,7 @@ function escapeHtml(text) {
 }
 
 loadComments();
+
 
 
 
