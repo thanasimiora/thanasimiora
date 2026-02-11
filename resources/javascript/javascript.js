@@ -402,9 +402,52 @@ function articlepage() {
 }
 
 
+// pagination
+const itemsPerPage = 10;
+      const items = document.querySelectorAll(".newscontainer");
+      const pagination = document.getElementById("pagination");
+
+      const pageCount = Math.ceil(items.length / itemsPerPage);
+
+      function showPage(page) {
+        items.forEach((item, index) => {
+          item.style.display =
+            index >= (page - 1) * itemsPerPage && index < page * itemsPerPage
+              ? "block"
+              : "none";
+        });
+
+        document
+          .querySelectorAll(".page-item")
+          .forEach((li) => li.classList.remove("active"));
+        document.getElementById(`page-${page}`).classList.add("active");
+      }
+
+      function createPagination() {
+        for (let i = 1; i <= pageCount; i++) {
+          const li = document.createElement("li");
+          li.className = "page-item";
+          li.id = `page-${i}`;
+
+          const a = document.createElement("a");
+          a.className = "page-link";
+          a.href = "#";
+          a.innerText = i;
+          a.onclick = (e) => {
+            e.preventDefault();
+            showPage(i);
+          };
+
+          li.appendChild(a);
+          pagination.appendChild(li);
+        }
+      }
+
+      createPagination();
+      showPage(1);
 
 
-
+// end pagination
 
 
 
