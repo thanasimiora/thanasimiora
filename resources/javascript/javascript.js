@@ -351,9 +351,10 @@ function filterArticles(cat) {
       newsEl.innerHTML = result;
     } else {
       const newstemplate1 =
-        document.getElementByclassname("template1container")[0];
+        document.getElementById("testing");
       newstemplate1.innerHTML = result;
     }
+
   });
 }
 
@@ -397,6 +398,7 @@ function articlepage() {
 
   document.getElementById("testing").innerHTML = rr;
 }
+
 
 
 
