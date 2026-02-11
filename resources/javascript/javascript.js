@@ -352,7 +352,8 @@ function filterArticles(cat) {
     } else {
       const newstemplate1 =
         document.getElementById("testing");
-      newstemplate1.innerHTML = result;
+      newstemplate1.innerHTML = result
+      document.getElementById("comments-section").innerHTML ="";
     }
 
   });
@@ -398,6 +399,7 @@ function articlepage() {
 
   document.getElementById("testing").innerHTML = rr;
 }
+
 
 
 
