@@ -5,7 +5,7 @@ const articles = 28;
 const v = articles - params.get("text");
 
 
-const PAGE_ID = window.location.pathname + "?text=";
+const PAGE_ID = window.location.pathname + v;
 
 // Fetch and display comments
 async function loadComments() {
@@ -49,6 +49,7 @@ async function postComment() {
 }
 
 loadComments();
+
 
 
 
