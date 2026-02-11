@@ -17,7 +17,7 @@ footer {
   align-self: center;
 }
 
-.pagination {height:100px}
+.pagination {height:100px};
 
 .topbar {
   display: flex;
@@ -278,6 +278,7 @@ img {
 }
 
 /* τελος σχολιων */
+
 
 
 
