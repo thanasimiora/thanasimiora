@@ -351,12 +351,14 @@ function filterArticles(cat) {
     
     if (newsEl) {
       newsEl.innerHTML = result ;
-    } else {
-      const newstemplate1 =
+       const newstemplate1 =
         document.getElementById("testing");
+    } else if (newstemplate1) {     
       newstemplate1.innerHTML = result ;
+      document.getElementById("comments-section").innerHTML ="";}
+    else {
+     document.getElementById("epikoinonia-container").innerHTML=result;
       document.getElementById("comments-section").innerHTML ="";
-      
     }
 
   });
@@ -450,6 +452,7 @@ const itemsPerPage = 10;
 
 
 // end pagination
+
 
 
 
