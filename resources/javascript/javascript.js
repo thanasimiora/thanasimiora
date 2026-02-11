@@ -292,7 +292,7 @@ function combineTexts(articles) {
 
   articles.forEach((article) => {
    result +=
-      '<div class="newscontainer"><div><div class="newsdiv"><a href="temp/template1.html?text=' +
+      '<div class="newscontainer"><div><div class="newsdiv"><a href="/thanasimiora/temp/template1.html?text=' +
       encodeURIComponent(article.id) +
       '"><img src="/thanasimiora/resources/images/' +
       article.pic +
@@ -300,7 +300,7 @@ function combineTexts(articles) {
       article.category +
       '</h6></div><h5 id="date">' +
       article.date +
-      '</h5></div><a href="temp/template1.html?text=' +
+      '</h5></div><a href="/thanasimiora/temp/template1.html?text=' +
       encodeURIComponent(article.id) +
       '"><h1 id="title">' +
       article.title +
@@ -339,7 +339,7 @@ function filterArticles(cat) {
       article.category +
       '</h6></div><h5 id="date">' +
       article.date +
-      '</h5></div><a href="temp/template1.html?text=' +
+      '</h5></div><a href="/thanasimiora/temp/template1.html?text=' +
       encodeURIComponent(article.id) +
       '"><h1 id="title">' +
       article.title +
@@ -399,6 +399,7 @@ function articlepage() {
 
   document.getElementById("testing").innerHTML = rr;
 }
+
 
 
 
