@@ -1,47 +1,74 @@
-const API_URL =
-  "https://script.google.com/macros/s/AKfycbz4cc8jSe91ADsF5Mpzn30Rfq7kOxVK2lyoaI6YAfXtcoTVFHu3rKhhABs9tT75wLgTOA/exec"; // Your Google Apps Script URL
-const PAGE_ID = window.location.pathname;
+<script>
+const API_URL = "PASTE_YOUR_WEB_APP_URL_HERE";
 
-// Fetch and display comments
+// Extract ?text=ARTICLE_ID from URL
+function getPageId() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get("text") || "default";
+}
+
+const PAGE_ID = getPageId();
+
+// Fetch comments
 async function loadComments() {
   try {
-    const params = new URLSearchParams(window.location.search);
-    var v = articles.length - params.get("text");
     const res = await fetch(
-      `${API_URL}?action=get&page=${encodeURIComponent(PAGE_ID)}&text=${v}`,
+      `${API_URL}?action=get&page=${encodeURIComponent(PAGE_ID)}`
     );
     const comments = await res.json();
     const container = document.getElementById("comments-list");
     container.innerHTML = "";
-    if (comments.length === 0)
-      container.innerHTML = "<p>Δεν υπάρχουν σχόλια ακόμη.</p>";
-    comments.forEach((c) => {
+
+    if (comments.length === 0) {
+      container.innerHTML = "<p>No comments yet.</p>";
+      return;
+    }
+
+    comments.forEach(c => {
       const div = document.createElement("div");
       div.className = "comment-item";
-      div.innerHTML = `<strong>${c.name}</strong> <em>${new Date(c.timestamp).toLocaleString()}</em><br>${c.comment}`;
+      div.innerHTML = `
+        <strong>${escapeHtml(c.name)}</strong>
+        <em>${new Date(c.timestamp).toLocaleString()}</em><br>
+        ${escapeHtml(c.comment)}
+      `;
       container.appendChild(div);
     });
   } catch (e) {
-    console.error(e);
+    console.error("Failed to load comments", e);
   }
 }
 
+// Post comment
 async function postComment() {
   const name = document.getElementById("comment-name").value || "Anonymous";
-  const comment = document.getElementById("comment-text").value;
+  const comment = document.getElementById("comment-text").value.trim();
+
   if (!comment) return alert("Comment cannot be empty");
+
   try {
-    const params = new URLSearchParams(window.location.search);
-    var v = articles.length - params.get("text");
     await fetch(
-      `${API_URL}?action=post&page=${encodeURIComponent(PAGE_ID)}&text=${v}&name=${encodeURIComponent(name)}&comment=${encodeURIComponent(comment)}`,
+      `${API_URL}?action=post&page=${encodeURIComponent(PAGE_ID)}&name=${encodeURIComponent(name)}&comment=${encodeURIComponent(comment)}`
     );
     document.getElementById("comment-text").value = "";
     document.getElementById("comment-name").value = "";
     loadComments();
   } catch (e) {
-    console.error(e);
+    console.error("Failed to post comment", e);
   }
 }
 
+// Basic XSS protection
+function escapeHtml(text) {
+  return text.replace(/[&<>"']/g, m => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#039;"
+  }[m]));
+}
+
+// Load on page open
 loadComments();
+</script>
