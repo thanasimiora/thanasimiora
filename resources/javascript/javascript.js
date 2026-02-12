@@ -435,113 +435,76 @@ function articlepage() {
 
 
 // pagination
-const articlesPerPage = 5;
-let currentPage = 1;
+document.addEventListener("DOMContentLoaded", () => {
 
-function renderArticles() {
-  const newsContainer = document.getElementById("news");
-  newsContainer.innerHTML = "";
+  const articlesPerPage = 10;
+  let currentPage = 1;
 
-  const start = (currentPage - 1) * articlesPerPage;
-  const end = start + articlesPerPage;
+  function renderArticles() {
+    const newsContainer = document.getElementById("news");
+    if (!newsContainer) return;
 
-  const currentArticles = articles.slice(start, end);
+    newsContainer.innerHTML = "";
 
-  currentArticles.forEach(article => {
-    const div = document.createElement("div");
-    div.className = "news-item mb-4";
-    div.innerHTML = `
-      <h3>${article.title}</h3>
-      <small>${article.date} • ${article.category}</small>
-      <p>${article.text.substring(0, 250)}...</p>
-    `;
-    newsContainer.appendChild(div);
-  });
+    const start = (currentPage - 1) * articlesPerPage;
+    const end = start + articlesPerPage;
 
-  renderPagination();
-}
+    const currentArticles = articles.slice(start, end);
 
-function renderPagination() {
-  const pagination = document.getElementById("pagination");
-  pagination.innerHTML = "";
+    currentArticles.forEach(article => {
+      const div = document.createElement("div");
+      div.className = "news-item mb-4";
+      div.innerHTML = `
+        <h3>${article.title}</h3>
+        <small>${article.date} • ${article.category}</small>
+      `;
+      newsContainer.appendChild(div);
+    });
 
-  const totalPages = Math.ceil(articles.length / articlesPerPage);
-
-  // Previous
-  pagination.appendChild(createPageItem("Previous", currentPage - 1, currentPage === 1));
-
-  // Page numbers
-  for (let i = 1; i <= totalPages; i++) {
-    pagination.appendChild(createPageItem(i, i, false, i === currentPage));
+    renderPagination();
   }
 
-  // Next
-  pagination.appendChild(createPageItem("Next", currentPage + 1, currentPage === totalPages));
-}
+  function renderPagination() {
+    const pagination = document.getElementById("pagination");
+    if (!pagination) return;
 
-function createPageItem(label, page, disabled = false, active = false) {
-  const li = document.createElement("li");
-  li.className = `page-item ${disabled ? "disabled" : ""} ${active ? "active" : ""}`;
+    pagination.innerHTML = "";
 
-  const btn = document.createElement("button");
-  btn.className = "page-link";
-  btn.textContent = label;
+    const totalPages = Math.ceil(articles.length / articlesPerPage);
 
-  btn.addEventListener("click", () => {
-    if (!disabled && page !== currentPage) {
-      currentPage = page;
-      renderArticles();
-      window.scrollTo({ top: 0, behavior: "smooth" });
+    pagination.appendChild(createPageItem("Previous", currentPage - 1, currentPage === 1));
+
+    for (let i = 1; i <= totalPages; i++) {
+      pagination.appendChild(
+        createPageItem(i, i, false, i === currentPage)
+      );
     }
-  });
 
-  li.appendChild(btn);
-  return li;
-}
+    pagination.appendChild(
+      createPageItem("Next", currentPage + 1, currentPage === totalPages)
+    );
+  }
 
-// initial render
-renderArticles();
+  function createPageItem(label, page, disabled, active = false) {
+    const li = document.createElement("li");
+    li.className = `page-item ${disabled ? "disabled" : ""} ${active ? "active" : ""}`;
 
+    const btn = document.createElement("button");
+    btn.className = "page-link";
+    btn.textContent = label;
 
+    btn.onclick = () => {
+      if (!disabled && page !== currentPage) {
+        currentPage = page;
+        renderArticles();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    };
 
+    li.appendChild(btn);
+    return li;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  // 🔥 START HERE
+  renderArticles();
+});
