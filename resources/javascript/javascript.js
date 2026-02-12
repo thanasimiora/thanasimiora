@@ -322,6 +322,67 @@ var articles = [
 
 const pagin=' <nav aria-label="Page navigation example">      <ul class="pagination" id="pagination"></ul>    </nav>';
 
+function initPagination() {
+  const items = document.querySelectorAll(".item");
+  const pagination = document.getElementById("pagination");
+
+  if (!pagination || items.length === 0) return;
+
+  pagination.innerHTML = "";
+
+  const pageCount = Math.ceil(items.length / itemsPerPage);
+
+  function showPage(page) {
+    items.forEach((item, index) => {
+      item.style.display =
+        index >= (page - 1) * itemsPerPage && index < page * itemsPerPage
+          ? "block"
+          : "none";
+    });
+
+    document
+      .querySelectorAll(".page-item")
+      .forEach((li) => li.classList.remove("active"));
+
+    const active = document.getElementById(`page-${page}`);
+    if (active) active.classList.add("active");
+  }
+
+  for (let i = 1; i <= pageCount; i++) {
+    const li = document.createElement("li");
+    li.className = "page-item";
+    li.id = `page-${i}`;
+
+    const a = document.createElement("a");
+    a.className = "page-link";
+    a.href = "#";
+    a.innerText = i;
+    a.onclick = (e) => {
+      e.preventDefault();
+      showPage(i);
+    };
+
+    li.appendChild(a);
+    pagination.appendChild(li);
+  }
+
+  showPage(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function combineTexts(articles) {
   let result = "";
 
@@ -349,6 +410,7 @@ const newz = combineTexts(articles);
 const newsEl = document.getElementById("news");
 if (newsEl) {
   newsEl.innerHTML = newz + pagin;
+  initPagination();
 }
 
 document.addEventListener("click", function (e) {
@@ -384,11 +446,13 @@ function filterArticles(cat) {
     
     if (newsEl) {
       newsEl.innerHTML = result + pagin;
+      initPagination();
     } else {
       const newstemplate1 =
         document.getElementById("testing");
       newstemplate1.innerHTML = result + pagin
-      document.getElementById("comments-section").innerHTML ="";
+      document.getElementById("comments-section").innerHTML =""
+        initPagination();;
     }
 
   });
@@ -437,10 +501,10 @@ function articlepage() {
 
 // pagination
 const itemsPerPage = 10;
-      const items = document.querySelectorAll(".item");
-      const pagination = document.getElementById("pagination");
+      // const items = document.querySelectorAll(".item");
+      // const pagination = document.getElementById("pagination");
 
-      const pageCount = Math.ceil(items.length / itemsPerPage);
+      // const pageCount = Math.ceil(items.length / itemsPerPage);
 
       function showPage(page) {
         items.forEach((item, index) => {
@@ -480,4 +544,5 @@ const itemsPerPage = 10;
       showPage(1);
 
 //end pagination
+
 
