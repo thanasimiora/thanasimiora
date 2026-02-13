@@ -49,7 +49,7 @@ footer {
 .newscontainer img {
     display: block;       /* ensures the image is treated as a block element */
     margin: 0 auto;  
-  
+}
 .newsdiv {
   position: relative;
 }
@@ -312,6 +312,7 @@ a {
 }
 
 /* τελος σχολιων */
+
 
 
 
