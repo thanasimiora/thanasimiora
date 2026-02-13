@@ -10,8 +10,9 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
     <link href="resources/css/styles.css" rel="stylesheet" />
-   </head>
+  </head>
 
   <body>
     <!-- mpara -->
@@ -21,13 +22,18 @@
     <!-- crypto -->
     <div id="crypto_container"></div>
     <!-- crypto end -->
-
-    <!-- news -->
-    <div id="news"></div>      
+    <div class="mainpage">
+      <div class="adleft">
+        <img class="ads" src="resources/ads/ad1.png" alt="ad1" />
+      </div>
+      <!-- news -->
+      <div id="news"></div>
+      <div class="adright">
+        <img class="ads" src="resources/ads/ad2.png" alt="ad1" />
+      </div>
+    </div>
     <!-- end news -->
- 
-
- </body>
+  </body>
   <!-- footer -->
   <footer id="footer" class="footer"></footer>
   <script
@@ -37,9 +43,8 @@
   ></script>
   <script src="resources/javascript/javascript.js"></script>
   <script src="https://widgets.coingecko.com/gecko-coin-price-static-headline-widget.js"></script>
- 
+  <script>
+    pages();
+  </script>
 </html>
-
-
-
-
+-
