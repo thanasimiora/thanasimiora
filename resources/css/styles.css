@@ -49,11 +49,12 @@ footer {
 }
 .newsdiv img {
     display: block;       /* ensures the image is treated as a block element */
-    /* margin: 0 auto;   */
+      width: 100%;
+  /* margin: 0 auto;   */
 }
 .newsdiv {
   position: relative;
-  width: 100%;
+  width: 75%;
 }
 #title {
   text-decoration: underline;
@@ -314,6 +315,7 @@ a {
 }
 
 /* τελος σχολιων */
+
 
 
 
