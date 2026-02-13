@@ -463,9 +463,7 @@ function pages() {
     items.forEach((item, index) => {
       item.style.display =
         index >= (page - 1) * itemsPerPage && index < page * itemsPerPage
-          ? "block"
-          : "none";
-    });
+          });
 
     document
       .querySelectorAll(".page-item")
@@ -496,3 +494,4 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
