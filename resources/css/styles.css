@@ -53,6 +53,12 @@ footer {
   align-self: center;
   width: 75%;
 }
+.newsdiv div {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 #title {
   text-decoration: underline;
   text-align: center;
@@ -311,3 +317,4 @@ a {
 }
 
 /* τελος σχολιων */
+
