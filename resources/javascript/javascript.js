@@ -368,7 +368,7 @@ const newz = combineTexts(articles);
 const newsEl = document.getElementById("news");
 if (newsEl) {
   newsEl.innerHTML = newz + paginationnavbar;
-    pages();
+   
 }
 
 document.addEventListener("click", function (e) {
@@ -497,5 +497,6 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
