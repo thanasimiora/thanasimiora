@@ -54,6 +54,7 @@ footer {
 }
 .newsdiv {
   position: relative;
+    align-self: center;
   width: 75%;
 }
 #title {
@@ -315,6 +316,7 @@ a {
 }
 
 /* τελος σχολιων */
+
 
 
 
