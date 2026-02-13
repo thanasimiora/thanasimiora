@@ -6,6 +6,7 @@
 body {
   /* Fallback for browsers that don't support dvh */
   min-height: 100vh;
+  max-width: 100vw;
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
@@ -317,4 +318,5 @@ a {
 }
 
 /* τελος σχολιων */
+
 
