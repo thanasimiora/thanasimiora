@@ -2,7 +2,7 @@ var articles = [
     {
     id: 34,
     date: "13/2/2026",
-    title: "Η Μελωδία των Σκιών: Ο Χατζηδάκης ως Αγωγός Δαιμονικών Ήχων",
+    title: "Η Μελωδία των Σκιών: Ο Συνθέτης ως Αγωγός Δαιμονικών Μηνυμάτων",
     pic: "devilsmusic",
     category: "ΠΟΛΙΤΙΣΜΟΣ",
     author: "ROBERT MUGABE jr",
@@ -543,6 +543,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
