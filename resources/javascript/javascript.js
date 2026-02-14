@@ -362,13 +362,17 @@ const adleftdiv = document.getElementById("adleft");
 const adrightdiv = document.getElementById("adright");
 // ws edw
 
+
+
+
+
 function adads() {
   adleftdiv.innerHTML = adleft;
   adrightdiv.innerHTML = adright;
 }
-
+if(!oroi){
 adads();
-
+}
 
 function combineTexts(articles) {
   let result = "";
@@ -539,6 +543,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
