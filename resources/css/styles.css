@@ -21,7 +21,7 @@ footer {
 
 .adleft,
 .adright {
-  flex: 0 0 20%
+  flex: 0 0 20%;
   top: 50px;
   display: flex;
   flex-direction: column;
@@ -328,6 +328,7 @@ a {
 }
 
 /* τελος σχολιων */
+
 
 
 
