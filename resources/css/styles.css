@@ -19,7 +19,7 @@ footer {
 }
 .adleft,
 .adright {
-  width: 12vw; /* 12% of screen width */
+  width: 15vw; /* 12% of screen width */
   top: 50px;
   display: flex;
   flex-direction: column;
@@ -318,6 +318,7 @@ a {
 }
 
 /* τελος σχολιων */
+
 
 
 
