@@ -17,7 +17,7 @@ footer {
 .mainpage {
  display: flex;
   justify-content: space-between;
-  min-width:60dvw;
+
 }
 
 .adleft,
@@ -37,7 +37,7 @@ footer {
 }
 
 #news {
-  width: 76vw;
+  min-width: 76vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -333,6 +333,7 @@ a {
 }
 
 /* τελος σχολιων */
+
 
 
 
