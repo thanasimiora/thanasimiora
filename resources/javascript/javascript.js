@@ -354,7 +354,7 @@ const adrightdiv = document.getElementById("adright");
 
 function adads() {
   adleftdiv.innerHTML = adleft;
-  adright.innerHTML = adright;
+  adrightdiv.innerHTML = adright;
 }
 adads();
 
@@ -519,3 +519,4 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
