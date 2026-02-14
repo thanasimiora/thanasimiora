@@ -421,7 +421,8 @@ function filterArticles(cat) {
         article.title +
         "</h1></a></div>";
     }
-
+ adleftdiv.style.flex = '0 0 20%';
+  adrightdiv.style.flex = '0 0 20%';
     
     if (newsEl) {
       newsEl.innerHTML = result + paginationnavbar;
@@ -528,6 +529,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
