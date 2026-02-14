@@ -356,7 +356,9 @@ function adads() {
   adleftdiv.innerHTML = adleft;
   adrightdiv.innerHTML = adright;
 }
+if(adleft){
 adads();
+}
 
 function combineTexts(articles) {
   let result = "";
@@ -474,8 +476,8 @@ function articlepage() {
     "      </div>    </div>";
 
   document.getElementById("testing").innerHTML = rr;
-   adleftdiv.innerHTML = "";
-  adrightdiv.innerHTML = "";
+  //  adleftdiv.innerHTML = "";
+  // adrightdiv.innerHTML = "";
 }
 
 // pagination
@@ -523,6 +525,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
