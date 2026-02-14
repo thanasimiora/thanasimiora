@@ -33,7 +33,8 @@ footer {
 .adright {  margin-top: 25dvh;}
 
 .news{
-     flex: 1;}
+     flex: 1;
+justify-content: flex-start;}
 
 .ads {
   z-index: 0;
@@ -329,6 +330,7 @@ a {
 }
 
 /* τελος σχολιων */
+
 
 
 
