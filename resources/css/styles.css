@@ -39,7 +39,8 @@ footer {
   padding: 1.5vw;
   max-width: 100%;
   height: auto;
-  margin-top: 15dvh;
+  margin-top: 7dvh;
+  margin-bottom: 7dvh;
 }
 
 #news {
@@ -327,6 +328,7 @@ a {
 }
 
 /* τελος σχολιων */
+
 
 
 
