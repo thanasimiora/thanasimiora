@@ -18,8 +18,7 @@ footer {
   display: flex;
 }
 
-.adleft
-.adright {
+.adleft .adright {
   width: 20vw;  
   top: 50px;
   display: flex;
@@ -322,6 +321,7 @@ a {
 }
 
 /* τελος σχολιων */
+
 
 
 
