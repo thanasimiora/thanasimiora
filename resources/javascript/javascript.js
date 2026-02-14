@@ -431,7 +431,7 @@ function filterArticles(cat) {
       document.getElementById("comments-section").innerHTML = "";
     }
   });
-  adads();
+ 
 }
 
 document.getElementById("barr").innerHTML =
@@ -519,4 +519,5 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
