@@ -26,10 +26,10 @@ footer {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-   margin: 2vw;
-   margin-top: 10dvh;
+   paddding: 2vw;
+   
 }
-.adright {  margin-top: 30dvh;}
+.adright {  margin-top: 25dvh;}
 
 .news{
      flex: 1;}
@@ -39,6 +39,7 @@ footer {
   padding: 1.5vw;
   max-width: 100%;
   height: auto;
+  margin-top: 15dvh;
 }
 
 #news {
@@ -326,6 +327,7 @@ a {
 }
 
 /* τελος σχολιων */
+
 
 
 
