@@ -477,8 +477,10 @@ function articlepage() {
     "      </div>    </div>";
 
   document.getElementById("testing").innerHTML = rr;
-  //  adleftdiv.innerHTML = "";
-  // adrightdiv.innerHTML = "";
+   adleftdiv.innerHTML = "";
+  adrightdiv.innerHTML = "";
+ adleftdiv.style.flex = '0 0 0';
+  adrightdiv.style.flex = '0 0 0';
 }
 
 // pagination
@@ -526,6 +528,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
