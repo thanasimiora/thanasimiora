@@ -356,9 +356,9 @@ function adads() {
   adleftdiv.innerHTML = adleft;
   adrightdiv.innerHTML = adright;
 }
-if(adleftdiv){
+
 adads();
-}
+
 
 function combineTexts(articles) {
   let result = "";
@@ -421,8 +421,7 @@ function filterArticles(cat) {
         article.title +
         "</h1></a></div>";
     }
- document.getElementById("strawright").id="adright";
-     document.getElementById("strawlft").id="adleft";
+
     
     if (newsEl) {
       newsEl.innerHTML = result + paginationnavbar;
@@ -527,6 +526,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
