@@ -15,11 +15,13 @@ footer {
   margin-top: auto;
 }
 .mainpage {
-  display: flex;
+ display: flex;
+  justify-content: space-between;
 }
 
-.adleft .adright {
-  width: 20vw;  
+.adleft,
+.adright {
+  flex: 0 0 20%
   top: 50px;
   display: flex;
   flex-direction: column;
@@ -27,7 +29,7 @@ footer {
 }
 
 .news{
-     max-width:55vw;}
+     flex: 1;}
 
 .ads {
   z-index: 0;
@@ -321,6 +323,7 @@ a {
 }
 
 /* τελος σχολιων */
+
 
 
 
