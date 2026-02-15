@@ -41,7 +41,7 @@ var articles = [
   },
   {
     id: 35,
-    date: "15/2/2026",
+    date: "14/2/2026",
     title: " Ο Υγρός Τάφος της Βρετανικής Αλαζονείας",
     pic: "titanic",
     category: "ΙΣΤΟΡΙΑ",
@@ -593,6 +593,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
