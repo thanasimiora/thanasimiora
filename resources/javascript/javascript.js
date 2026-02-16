@@ -22,7 +22,7 @@ var articles = [
            // {
   //   id: 40,
   //   date: "17/2/2026",
-  //   title: " Οι Κατάσκοποι του Σκότους: Γάτες και Σατανισμός",
+  //   title: " Οι Κατάσκοποι του Σκότους",
   //   pic: "cats",
   //   category: "ΠΟΛΙΤΙΣΜΟΣ",
   //   author: "ΜΑΡΙΑ ΘΗΡΕΣΙΑ",
@@ -623,6 +623,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
