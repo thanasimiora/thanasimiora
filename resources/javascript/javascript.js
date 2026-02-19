@@ -32,7 +32,7 @@ var articles = [
         {
     id: 44,
     date: "19/2/2026",
-    title: "Κβαντικομαγική χρωμοδυναμική",
+    title: "Κβαντομαγική χρωμοδυναμική",
     pic: "standardmodel",
     category: "ΕΠΙΣΤΗΜΕΣ",
     author: "Idi Amin Dada Oumee",
@@ -673,6 +673,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
