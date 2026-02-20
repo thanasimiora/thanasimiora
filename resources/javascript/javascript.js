@@ -1,7 +1,7 @@
 var articles = [ 
            {
     id: 48,
-    date: "/202/2026",
+    date: "20/2/2026",
     title: "Άχαστα σημεία της Παρασκευής #6",
     pic: "axasta6",
     category: "ΣΤΟΙΧΗΜΑ",
@@ -713,6 +713,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
