@@ -24,7 +24,7 @@ var articles = [
             {
     id: 50,
     date: "ΠΡΟΣΕΧΩΣ",
-    title: "Ιουστινιανός Α': Μια Μεγαλειώδης Κληρονομιά από Στάχτη (Μέρος Α')",
+    title: "Ιουστινιανός Α: Μια Μεγαλειώδης Κληρονομιά από Στάχτη (Μέρος Α)",
     pic: "ioustinianos",
     category: "ΙΣΤΟΡΙΑ",
     author: "ROBERT MUGABE jr",
@@ -726,6 +726,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
