@@ -2,12 +2,12 @@ var articles = [
     {
     id: 52,
     date: "ΠΡΟΣΕΧΩΣ",
-    title: "Ιουστινιανός Α': Μια Μεγαλειώδης Κληρονομιά από Στάχτη (Μέρος Α')",
+    title: "Ιουστινιανός Α': Μια Μεγαλειώδης Κληρονομιά από Στάχτη (Μέρος Α)",
     pic: "ioustinianos",
     category: "ΙΣΤΟΡΙΑ",
     author: "ROBERT MUGABE jr",
     link: "ioustinianos",
-    text: "<p>Μείνετε συντονισμένοι... Οι αλήθεια έρχεται... XXIII-II-MMXXVI</p>",
+    text: "Μείνετε συντονισμένοι... Οι αλήθεια έρχεται... XXIII-II-MMXXVI",
            },
        
         //{
@@ -726,6 +726,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
