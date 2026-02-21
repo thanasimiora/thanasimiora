@@ -29,7 +29,7 @@ var articles = [
     category: "ΙΣΤΟΡΙΑ",
     author: "ROBERT MUGABE jr",
     link: "ioustinianos",
-    text:"Μείνετε συντονισμένοι... Οι αλήθεια έρχεται... ", 
+    text:"XXIII-II-MMXXVI", 
      },   
     {
     id: 49,
@@ -726,6 +726,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
