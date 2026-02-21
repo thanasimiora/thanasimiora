@@ -1,6 +1,7 @@
-var articles = [     {
+var articles = [   
+    {
     id: 52,
-    date: "XXIII-II-MMXXVI",
+    date: "ΠΡΟΣΕΧΩΣ",
     title: "Ιουστινιανός Α': Μια Μεγαλειώδης Κληρονομιά από Στάχτη (Μέρος Α')",
     pic: "ioustinianos",
     category: "ΙΣΤΟΡΙΑ",
@@ -725,6 +726,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
