@@ -586,7 +586,7 @@ function combineTexts(articles) {
       encodeURIComponent(article.id) +
       '"><img src="/thanasimiora/resources/images/' +
       article.pic +
-      '.webp" alt="article" loading="lazy"/></a><h6 class="category"> ' +
+      '.webp" alt="article" /></a><h6 class="category"> ' +
       article.category +
       '</h6></div><h5 id="date">' +
       article.date +
@@ -628,7 +628,7 @@ function filterArticles(cat) {
         encodeURIComponent(article.id) +
         '"><img src="/thanasimiora/resources/images/' +
         article.pic +
-        '.webp" alt="article" loading="lazy"/></a><h6 class="category"> ' +
+        '.webp" alt="article" /></a><h6 class="category"> ' +
         article.category +
         '</h6></div><h5 id="date">' +
         article.date +
@@ -682,7 +682,7 @@ function articlepage() {
   rr =
     '<img        class="template1div"        src="/thanasimiora/resources/images/' +
     articles[v].pic +
-    '.webp"        alt="article"    loading="lazy"  />      <div class="subtext">        <h6>' +
+    '.webp"        alt="article"      />      <div class="subtext">        <h6>' +
     articles[v].category +
     "</h6>        <h5>" +
     articles[v].date +
@@ -746,6 +746,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
