@@ -553,9 +553,9 @@ const paginationnavbar =
   ' <nav aria-label="Page navigation example">      <ul class="pagination justify-content-center" id="pagination">  </ul>    </nav>';
 
 const adleft =
-  '<a href="https://www.pakohart.gr"          ><img class="ads" src="/thanasimiora/resources/ads/ad1.gif" alt="ad1"        /></a>        <a          href="https://www.facebook.com/p/%CE%93%CE%A1%CE%91%CE%A6%CE%95%CE%99%CE%9F-%CE%A4%CE%95%CE%9B%CE%95%CE%A4%CE%A9%CE%9D-%CE%A4%CE%9F-%CE%93%CE%A1%CE%97%CE%93%CE%9F%CE%A1%CE%9F-%CE%A6%CE%A4%CE%A5%CE%91%CE%A1%CE%99-100067909448422/"          ><img class="ads" src="/thanasimiora/resources/ads/ad2." alt="ad2"        /></a>';
+  '<a href="https://www.pakohart.gr"          ><img class="ads" src="/thanasimiora/resources/ads/ad1.gif" alt="ad1"        /></a>        <a          href="https://www.facebook.com/p/%CE%93%CE%A1%CE%91%CE%A6%CE%95%CE%99%CE%9F-%CE%A4%CE%95%CE%9B%CE%95%CE%A4%CE%A9%CE%9D-%CE%A4%CE%9F-%CE%93%CE%A1%CE%97%CE%93%CE%9F%CE%A1%CE%9F-%CE%A6%CE%A4%CE%A5%CE%91%CE%A1%CE%99-100067909448422/"          ><img class="ads" src="/thanasimiora/resources/ads/ad2.png" alt="ad2"        /></a>';
 const adright =
-  ' <a href="https://big-hunter.gr"            ><img              class="ads"              src="/thanasimiora/resources/ads/adb."              alt="ada"          /></a>          <a href="https://www.verettasbooks.gr"            ><img              class="ads"              src="/thanasimiora/resources/ads/ada.gif"              alt="adb"          /></a>';
+  ' <a href="https://big-hunter.gr"            ><img              class="ads"              src="/thanasimiora/resources/ads/adb.png"              alt="ada"          /></a>          <a href="https://www.verettasbooks.gr"            ><img              class="ads"              src="/thanasimiora/resources/ads/ada.gif"              alt="adb"          /></a>';
 
 //ta divs stis selides
 const newsEl = document.getElementById("news");
@@ -746,6 +746,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
