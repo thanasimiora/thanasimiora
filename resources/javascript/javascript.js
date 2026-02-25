@@ -1,7 +1,7 @@
 var articles = [   
              //     {
-    // id: 54,
-    // date: "24/2/2026",
+    // id: 58,
+    // date: "26/2/2026",
     // title: "Η Γεωγραφία του Φόβου και η Πλάνη του Πλήθους",
     // pic: "8bil",
     // category: "ΠΟΛΙΤΙΣΜΟΣ",
@@ -11,8 +11,8 @@ var articles = [
         // },
           
  //     {
-    // id: 52,
-    // date: "23/2/2026",
+    // id: 57,
+    // date: "26/2/2026",
     // title: "Η Υπόγεια Κιβωτός των Ολίγων",
     // pic: "bunker",
     // category: "ΕΠΙΣΤΗΜΕΣ",
@@ -785,6 +785,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
