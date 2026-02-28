@@ -1,4 +1,14 @@
 var articles = [   
+   {
+    id: 70,
+    date: "ΠΡΟΣΕΧΩΣ",
+    title: "Το Πρώτο Νορβηγικό Black Metal Album",
+    pic: "mayhem",
+    category: "ΙΣΤΟΡΙΑ",
+    author: "ΑΓΑΘΟΚΛΗΣ",
+    link: "mayhem",
+    text: "666  ΧΞΣ  ⛤⛤⛤",
+   },
                      {
     id: 61,
     date: "28/2/2026",
@@ -817,6 +827,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
