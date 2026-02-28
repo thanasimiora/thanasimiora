@@ -46,7 +46,7 @@ var articles = [
     id: 57,
     date: "26/2/2026",
     title: "Η Υπόγεια Κιβωτός των Ολίγων",
-    pic: "bunker",use esc
+    pic: "bunker",
     category: "ΕΠΙΣΤΗΜΕΣ",
     author: "Idi Amin Dada Oumee",
     link: "bunker",
@@ -817,6 +817,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
