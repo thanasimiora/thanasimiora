@@ -14,7 +14,7 @@ var articles = [
     {
     id: 68,
     date: "4/3/2026",
-    title: "«Εκ των Γηίνων",
+    title: "Εκ των Γηίνων",
     pic: "earthlings",
     category: "ΙΣΤΟΡΙΑ",
     author: "Idi Amin Dada Oumee",
@@ -899,6 +899,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
