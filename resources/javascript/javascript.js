@@ -830,7 +830,7 @@ document.body.appendChild(script);
 //articles from template creation
 function articlepage() {
   const params = new URLSearchParams(window.location.search);
-  var v = articles.length - params.get("text");
+  const v = articles.length - params.get("text");
 
   rr =
     '<img        class="template1div"        src="/thanasimiora/resources/images/' +
@@ -899,6 +899,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
