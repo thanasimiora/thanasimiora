@@ -1,7 +1,7 @@
 var articles = [   
  // Idi Amin Dada Oumee      ΜΑΡΙΑ ΘΗΡΕΣΙΑ      ROBERT MUGABE jr         Father Diablo
    {
-    id: 70,
+    id: 69,
     date: "ΠΡΟΣΕΧΩΣ",
     title: "Το Πρώτο Νορβηγικό Black Metal Album",
     pic: "mayhem",
@@ -899,6 +899,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
