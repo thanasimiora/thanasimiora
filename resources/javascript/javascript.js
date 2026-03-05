@@ -26,7 +26,7 @@ var articles = [
     {
     id: 69,
     date: "5/3/2026",
-    title: "Η Σκοτεινή Κατακλυσμική Παραικονομία",
+    title: "Η Σκοτεινή Κατακλυσμική Παραοικονομία",
     pic: "nwe",
     category: "ΟΙΚΟΝΟΜΙΑ",
     author: "Idi Amin Dada Oumee",
@@ -921,6 +921,7 @@ function pages() {
   createPagination();
   showPage(1);
 }
+
 
 
 
