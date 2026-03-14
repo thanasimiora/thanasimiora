@@ -6,7 +6,7 @@ var articles = [
     id: 85,
     date: "14/3/2026",
     title:
-      "Η υπογραφή του ερπετού",
+      "Η Υπογραφή του Ερπετού",
     pic: "silicon",
     category: "ΤΕΧΝΟΛΟΓΙΑ",
     author: "Idi Amin Dada Oumee",
