@@ -623,7 +623,7 @@ var articles = [
   {
     id: 32,
     date: "13/2/2026",
-    title: "Θεατρική σοφία ή σοφιστικέ θέατρο;",
+    title: "Θεατρική Σοφία ή Σοφιστικέ Θέατρο;",
     pic: "shakespeare",
     category: "ΠΟΛΙΤΙΣΜΟΣ",
     author: "ΑΓΑΘΟΚΛΗΣ",
@@ -633,7 +633,7 @@ var articles = [
   {
     id: 31,
     date: "13/2/2026",
-    title: "Όταν ο Ρόμπερτ Μουγκάμπε «συναντά» τον Ιουστινιανό",
+    title: "Όταν ο Ρόμπερτ Μουγκάμπε «Συναντά» τον Ιουστινιανό",
     pic: "robert",
     category: "ΠΟΛΙΤΙΣΜΟΣ",
     author: "Father Diablo",
@@ -704,7 +704,7 @@ var articles = [
   {
     id: 24,
     date: "9/2/2026",
-    title: "Υπερθέρμανση του σύμπαντος",
+    title: "Υπερθέρμανση του Σύμπαντος",
     pic: "iperthermansi",
     category: "ΕΠΙΣΤΗΜΕΣ",
     author: "ROBERT MUGABE jr",
@@ -766,7 +766,7 @@ var articles = [
   {
     id: 18,
     date: "6/2/2026",
-    title: "Κινέζοι κατάσκοποι και στο ζωικό βασίλειο",
+    title: "Κινέζοι Κατάσκοποι και στο Ζωικό Βασίλειο",
     pic: "lemourioi",
     category: "ΠΟΛΙΤΙΣΜΟΣ",
     author: "ROBERT MUGABE jr",
@@ -776,7 +776,7 @@ var articles = [
   {
     id: 17,
     date: "6/2/2026",
-    title: "Σπείρα της υποταγής συνειδήσεων: ο κύκλος θανάτου και κυτταρίνης",
+    title: "Σπείρα της Υποταγής Συνειδήσεων: ο Κύκλος Θανάτου και Κυτταρίνης",
     pic: "xarti",
     category: "ΤΕΧΝΟΛΟΓΙΑ",
     author: "ΑΓΑΘΟΚΛΗ",
@@ -798,7 +798,7 @@ var articles = [
     id: 15,
     date: "5/2/2026",
     title:
-      "Artemis II: Το Παλαιό Σεληνιακό Συμβούλιο και η υποταγή του ανθρώπινου είδους",
+      "Artemis II: Το Παλαιό Σεληνιακό Συμβούλιο και η Υποταγή του Ανθρώπινου Είδους",
     pic: "artemis",
     category: "ΕΠΙΣΤΗΜΕΣ",
     author: "ΑΓΑΘΟΚΛΗ",
@@ -808,7 +808,7 @@ var articles = [
   {
     id: 14,
     date: "5/2/2026",
-    title: "Άχαστα σημεία της Πέμπτης #3",
+    title: "Άχαστα Σημεία της Πέμπτης #3",
     pic: "axasta3",
     category: "ΣΤΟΙΧΗΜΑ",
     author: "SAFARI SNIPER",
@@ -839,7 +839,7 @@ var articles = [
   {
     id: 11,
     date: "4/2/2026",
-    title: "Άχαστα σημεία της Τετάρτης #2",
+    title: "Άχαστα Σημεία της Τετάρτης #2",
     pic: "arubi",
     category: "ΣΤΟΙΧΗΜΑ",
     author: "SAFARI SNIPER",
@@ -849,7 +849,7 @@ var articles = [
   {
     id: 10,
     date: "4/2/2026",
-    title: "Νέα Τάξη πραγμάτων και οικογενειακή δυστυχία",
+    title: "Νέα Τάξη Πραγμάτων και Οικογενειακή Δυστυχία",
     pic: "diazigia",
     category: "ΟΙΚΟΝΟΜΙΑ",
     author: "ROBERT MUGABE jr",
@@ -879,7 +879,7 @@ var articles = [
   {
     id: 7,
     date: "3/2/2026",
-    title: '"Ελλειπείς" ελλείψεις και "τέλειοι" κύκλοι',
+    title: '"Ελλειπείς" Ελλείψεις και "Τέλειοι" Κύκλοι',
     pic: "ellipseis",
     category: "ΕΠΙΣΤΗΜΕΣ",
     author: "ROBERT MUGABE jr",
@@ -889,7 +889,7 @@ var articles = [
   {
     id: 6,
     date: "3/2/2026",
-    title: "Ιστορική καταγωγή των πάντων (και του T-Rex)",
+    title: "Ιστορική Καταγωγή των Πάντων (και του T-Rex)",
     pic: "dinosaur",
     category: "ΕΠΙΣΤΗΜΕΣ",
     author: "ROBERT MUGABE jr",
@@ -899,7 +899,7 @@ var articles = [
   {
     id: 5,
     date: "1/2/2026",
-    title: "Μας τα λεγε ο Μελ απ' το 2002!!!",
+    title: "Μας τα Λεγε ο Μελ απ' το 2002!!!",
     pic: "faraday",
     category: "ΕΠΙΣΤΗΜΕΣ",
     author: "ROBERT MUGABE jr",
@@ -909,7 +909,7 @@ var articles = [
   {
     id: 4,
     date: "1/2/2026",
-    title: "Άχαστα σημεία της Κυριακής #1",
+    title: "Άχαστα Σημεία της Κυριακής #1",
     pic: "axasta",
     category: "ΣΤΟΙΧΗΜΑ",
     author: "SAFARI SNIPER",
@@ -919,7 +919,7 @@ var articles = [
   {
     id: 3,
     date: "1/2/2026",
-    title: "Γενετικά πειράματα στη Μινωική Κρήτη???",
+    title: "Γενετικά Πειράματα στη Μινωική Κρήτη???",
     pic: "genetika",
     category: "ΙΣΤΟΡΙΑ",
     author: "ROBERT MUGABE jr",
@@ -929,7 +929,7 @@ var articles = [
   {
     id: 2,
     date: "1/2/2026",
-    title: "Δυτική μουσική-Από τον Μπαχ στον Πύθουλα",
+    title: "Δυτική Μουσική-Από τον Μπαχ στον Πύθουλα",
     pic: "mousiki",
     category: "ΠΟΛΙΤΙΣΜΟΣ",
     author: "ROBERT MUGABE jr",
@@ -939,7 +939,7 @@ var articles = [
   {
     id: 1,
     date: "1/2/2026",
-    title: "Αφρική το νέο Ελντοράντο;",
+    title: "Αφρική το Νέο Ελντοράντο;",
     pic: "eldorado",
     category: "ΣΤΟΙΧΗΜΑ",
     author: "SAFARI SNIPER",
