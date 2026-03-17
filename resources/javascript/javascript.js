@@ -8,7 +8,7 @@ var articles =  [
     id: 87,
     date: "17/3/2026",
     title:
-      "Το Μυστικό Έρεβος τηε Ύλης",
+      "Το Μυστικό Έρεβος της Ύλης",
     pic: "ili",
     category: "ΕΠΙΣΤΗΜΕΣ",
     author: "Idi Amin Dada Oumee",
