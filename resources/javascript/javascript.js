@@ -7,11 +7,11 @@ var articles =  [
     id: 92,
     date: "21/3/2026",
     title:
-      "Άχαστα Σημεία του Σαββάτου #10",
-    pic: "axasta10",
+      "Άχαστα Σημεία του Σαββάτου #9",
+    pic: "axasta9",
     category: "ΣΤΟΙΧΗΜΑ",
     author: "Safari Sniper",
-    link: "axasta10",
+    link: "axasta9",
     text: "<p>Μια πρόταση για σήμερα, Σάββατο 21 Μαρτίου 2026, που συνδυάζει κρίσιμα ματς από το CAF Champions League και τα εγχώρια πρωταθλήματα.</p><p>«ΤΟ ΑΦΡΙΚΑΝΙΚΟ ΤΡΕΝΟ»<br>1.Al Ahly-Esperance ακριβές σκορ 1-0 <br>2.Pyramids-FAR Rabat ημίχρονο/τελικο:Χ/1<br>3.Kaizer Chiefs-Magesi 2-3γκολ<br>4.Stellenbosch-Chippa utd  Χ<br>5.Polokwane city-Amazulu over 2,5 γκολ <br>6.Al Mokawloon-Petrojet  X<br>7.Ghazi El Mahalla-National Bank 2</p><p>Καλά κέρδη και πιείτε μια μπύρα στην υγειά μου 🪣🦁🚀</p>",
       }, 
   {
