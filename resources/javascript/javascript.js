@@ -6,7 +6,7 @@ var articles =  [
     id: 91,
     date: "21/3/2026",
     title:
-      "Τα logistics στον Πρώτο «Ελληνικό» Εμφύλιο Πόλεμο",
+      "Μεταλλαγμένα Φυτά στην Αρχαιότητα: Η Κληρονομιά που Τρώμε Σήμερα",
     pic: "moustarda",
     category: "ΙΣΤΟΡΙΑ",
     author: "ROBERT MUGABE jr",
