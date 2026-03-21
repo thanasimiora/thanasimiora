@@ -2,7 +2,19 @@ var articles =  [
   // Idi Amin Dada Oumee      ΜΑΡΙΑ ΘΗΡΕΣΙΑ      ROBERT MUGABE jr         Father Diablo       Ζήνων, ο Ταρασικοδίσσας    Safari Sniper  Μορφέας  ΑΓΑΘΟΚΛΗΣ
 
   //ΙΣΤΟΡΙΑ      ΠΟΛΙΤΙΣΜΟΣ      ΕΠΙΣΤΗΜΕΣ      ΟΙΚΟΝΟΜΙΑ   ΤΕΧΝΟΛΟΓΙΑ      ΣΤΟΙΧΗΜΑ
-   {
+  
+ {
+    id: 92,
+    date: "21/3/2026",
+    title:
+      "Μεταλλαγμένα Φυτά στην Αρχαιότητα: Η Κληρονομιά που Τρώμε Σήμερα",
+    pic: "axasta10",
+    category: "ΣΤΟΙΧΗΜΑ",
+    author: "Safari Sniper",
+    link: "axasta10",
+    text: "<p>Μια πρόταση για σήμερα, Σάββατο 21 Μαρτίου 2026, που συνδυάζει κρίσιμα ματς από το CAF Champions League και τα εγχώρια πρωταθλήματα.</p><p>«ΤΟ ΑΦΡΙΚΑΝΙΚΟ ΤΡΕΝΟ»<br>1.Al Ahly-Esperance ακριβές σκορ 1-0 <br>2.Pyramids-FAR Rabat ημίχρονο/τελικο:Χ/1<br>3.Kaizer Chiefs-Magesi 2-3γκολ<br>4.Stellenbosch-Chippa utd  Χ<br>5.Polokwane city-Amazulu over 2,5 γκολ <br>6.Al Mokawloon-Petrojet  X<br>7.Ghazi El Mahalla-National Bank 2</p><p>Καλά κέρδη και πιείτε μια μπύρα στην υγειά μου 🪣🦁🚀</p>",
+      }, 
+  {
     id: 91,
     date: "21/3/2026",
     title:
