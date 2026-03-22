@@ -550,7 +550,7 @@ var articles =  [
   {
     id: 51,
     date: "23/2/2026",
-    title: "Άχαστα σημεία της Καθαράς Δευτέρας #7",
+    title: "Άχαστα Σημεία της Καθαράς Δευτέρας #7",
     pic: "axasta7",
     category: "ΣΤΟΙΧΗΜΑ",
     author: "SAFARI SNIPER",
@@ -582,7 +582,7 @@ var articles =  [
   {
     id: 48,
     date: "20/2/2026",
-    title: "Άχαστα σημεία της Παρασκευής #6",
+    title: "Άχαστα Σημεία της Παρασκευής #6",
     pic: "axasta6",
     category: "ΣΤΟΙΧΗΜΑ",
     author: "SAFARI SNIPER",
@@ -695,7 +695,7 @@ var articles =  [
   {
     id: 37,
     date: "15/2/2026",
-    title: "Άχαστα σημεία της Κυριακής #5",
+    title: "Άχαστα Σημεία της Κυριακής #5",
     pic: "axasta5",
     category: "ΣΤΟΙΧΗΜΑ",
     author: "SAFARI SNIPER",
@@ -846,7 +846,7 @@ var articles =  [
   {
     id: 22,
     date: "8/2/2026",
-    title: "Άχαστα σημεία της Κυριακής #4",
+    title: "Άχαστα Σημεία της Κυριακής #4",
     pic: "axasta4",
     category: "ΣΤΟΙΧΗΜΑ",
     author: "SAFARI SNIPER",
