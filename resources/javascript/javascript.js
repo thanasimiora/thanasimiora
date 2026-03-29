@@ -1358,11 +1358,11 @@ function pages() {
       // oroi.innerHTML = "";
       oroi.innerHTML = filt + paginationnavbar;
       document.getElementById("comments-section").innerHTML = "";
+           }
         });
       }
     });
   }
-
   createPagination();
 
   showPage(1);
