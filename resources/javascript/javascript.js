@@ -1351,6 +1351,7 @@ function pages() {
          
      console.log(paginationnavbar);
           newsEl.innerHTML = filt + paginationnavbar;
+          newstemplate1.innerHTML = result + paginationnavbar;
           pages();
           createPagination();
           console.log(paginationnavbar);
