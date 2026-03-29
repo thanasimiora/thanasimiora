@@ -1306,7 +1306,7 @@ function pages() {
     }
 
     // mpara anazitisis
-    setTimeout(() => {
+ 
     document.addEventListener("DOMContentLoaded", function () {
          console.log("pressed");
       const searchButton = document.getElementById("searchsubmit");
@@ -1347,8 +1347,7 @@ function pages() {
               article.title +
               "</h1></a></div>";
           });
-       console.log("Search listener initialized after timeout.");
-}, 100); 
+ 
           
 if (newsEl) {
       newsEl.innerHTML = filt + paginationnavbar;
