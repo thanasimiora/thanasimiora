@@ -1323,7 +1323,7 @@ function pages() {
           });
 
           newsEl.innerHTML = "";
-          const filt="";
+        let filt="";
           if (filtered.length === 0) {
             newsEl.innerHTML =
               '<p style="text-align:center">Δεν βρέθηκαν άρθρα.</p>';
