@@ -1348,7 +1348,9 @@ function pages() {
               article.title +
               "</h1></a></div>";
           });
-         
+         if(result==null){
+           result=" ";
+         }
 if (newsEl) {
       newsEl.innerHTML = result + paginationnavbar;
     } else if (newstemplate1) {
