@@ -1348,9 +1348,10 @@ function pages() {
               article.title +
               "</h1></a></div>";
           });
-          createPagination();
+         
+           
                   newsEl.innerHTML = filt + paginationnavbar;
-   
+    createPagination();
         });
       }
     });
