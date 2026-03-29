@@ -1317,12 +1317,13 @@ function pages() {
           let filtered = articles.filter((article) => {
             return (
               article.title.toLowerCase().includes(input) ||
-              article.text.toLowerCase().includes(input)
+              article.text.toLowerCase().includes(input) ||
+              article.author.toLowerCase().includes(input)
             );
           });
 
           newsEl.innerHTML = "";
-
+          const filt="";
           if (filtered.length === 0) {
             newsEl.innerHTML =
               '<p style="text-align:center">Δεν βρέθηκαν άρθρα.</p>';
@@ -1346,7 +1347,7 @@ function pages() {
               "</h1></a></div>";
           });
           newsEl.innerHTML = filt;
-          newstemplate1 = filt;
+          newstemplate1.innerHTML = filt;
         });
       }
     });
