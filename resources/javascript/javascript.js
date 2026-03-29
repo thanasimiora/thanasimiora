@@ -1349,9 +1349,17 @@ function pages() {
               "</h1></a></div>";
           });
          
-     console.log(paginationnavbar);
-          newsEl.innerHTML = filt + paginationnavbar;
-          newstemplate1.innerHTML = result + paginationnavbar;
+if (newsEl) {
+      newsEl.innerHTML = result + paginationnavbar;
+    } else if (newstemplate1) {
+      newstemplate1.innerHTML = result + paginationnavbar;
+      document.getElementById("comments-section").innerHTML = "";
+      newstemplate1.id = "news";
+    } else {
+      // oroi.innerHTML = "";
+      oroi.innerHTML = result + paginationnavbar;
+      document.getElementById("comments-section").innerHTML = "";
+    }
           pages();
           createPagination();
           console.log(paginationnavbar);
