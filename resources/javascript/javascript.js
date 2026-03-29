@@ -1348,7 +1348,7 @@ function pages() {
               article.title +
               "</h1></a></div>";
           });
-         if(result==null){
+         if (result==undefined ) {
            result=" ";
          }
 if (newsEl) {
