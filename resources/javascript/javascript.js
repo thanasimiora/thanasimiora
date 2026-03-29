@@ -1306,7 +1306,7 @@ function pages() {
     }
 
     // mpara anazitisis
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("click", function () {
          console.log("pressed");
       const searchButton = document.getElementById("searchsubmit");
       const searchInput = document.getElementById("searchInput");
@@ -1321,10 +1321,7 @@ function pages() {
               article.text.toLowerCase().includes(input) ||
               article.author.toLowerCase().includes(input)
             );
-          });
-
-          newsEl.innerHTML = "";
-          
+          });          
         let filt="";
           
           if (filtered.length === 0) {
