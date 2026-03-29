@@ -1322,8 +1322,8 @@ function pages() {
             );
           });
 
-          newsEl.innerHTML = "";
-          newstemplate1.innerHTML = "";
+          // newsEl.innerHTML = "";
+          // newstemplate1.innerHTML = "";
         let filt="";
           
           if (filtered.length === 0) {
@@ -1348,8 +1348,16 @@ function pages() {
               article.title +
               "</h1></a></div>";
           });
-          newsEl.innerHTML = filt + paginationnavbar;
-          newstemplate1.innerHTML = filt + paginationnavbar;
+               if (newsEl) {
+      newsEl.innerHTML = filt + paginationnavbar;
+    } else if (newstemplate1) {
+      newstemplate1.innerHTML = filt + paginationnavbar;
+      document.getElementById("comments-section").innerHTML = "";
+      newstemplate1.id = "news";
+    } else {
+      // oroi.innerHTML = "";
+      oroi.innerHTML = filt + paginationnavbar;
+      document.getElementById("comments-section").innerHTML = "";
         });
       }
     });
