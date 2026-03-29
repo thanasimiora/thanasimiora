@@ -1349,9 +1349,10 @@ function pages() {
               "</h1></a></div>";
           });
          
-           
-                  newsEl.innerHTML = filt + paginationnavbar;
-    createPagination();
+     console.log(paginationnavbar);
+          newsEl.innerHTML = filt + paginationnavbar;
+          createPagination();
+          console.log(paginationnavbar);
         });
       }
     });
