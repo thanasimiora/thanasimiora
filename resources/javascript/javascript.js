@@ -1305,66 +1305,66 @@ function pages() {
       pagination.appendChild(li);
     }
 
-    //mpara anazitisis
-    // document.addEventListener("DOMContentLoaded", function () {
-    //   const searchButton = document.getElementById("searchsubmit");
-    //   const searchInput = document.getElementById("searchInput");
+    // mpara anazitisis
+    document.addEventListener("DOMContentLoaded", function () {
+      const searchButton = document.getElementById("searchsubmit");
+      const searchInput = document.getElementById("searchInput");
 
-    //   if (searchButton) {
-    //     searchButton.addEventListener("click", function () {
-    //       let input = searchInput.value.toLowerCase();
+      if (searchButton) {
+        searchButton.addEventListener("click", function () {
+          let input = searchInput.value.toLowerCase();
 
-    //       let filtered = articles.filter((article) => {
-    //         return (
-    //           article.title.toLowerCase().includes(input) ||
-    //           article.text.toLowerCase().includes(input) ||
-    //           article.author.toLowerCase().includes(input)
-    //         );
-    //       });
+          let filtered = articles.filter((article) => {
+            return (
+              article.title.toLowerCase().includes(input) ||
+              article.text.toLowerCase().includes(input) ||
+              article.author.toLowerCase().includes(input)
+            );
+          });
 
-    //       // newsEl.innerHTML = "";
-    //       // newstemplate1.innerHTML = "";
-    //     let filt="";
+          newsEl.innerHTML = "";
+          newstemplate1.innerHTML = "";
+        let filt="";
           
-    //       if (filtered.length === 0) {
-    //         newsEl.innerHTML =
-    //           '<p style="text-align:center">Δεν βρέθηκαν άρθρα.</p>';
-    //         return;
-    //       }
+          if (filtered.length === 0) {
+            newsEl.innerHTML =
+              '<p style="text-align:center">Δεν βρέθηκαν άρθρα.</p>';
+            return;
+          }
 
-    //       filtered.forEach((article) => {
-    //         filt +=
-    //           '<div class="newscontainer"><div><div class="newsdiv"><a href="/thanasimiora/temp/template1.html?text=' +
-    //           encodeURIComponent(article.id) +
-    //           '"><img src="/thanasimiora/resources/images/' +
-    //           article.pic +
-    //           '.webp" alt="article" /></a><h6 class="category"> ' +
-    //           article.category +
-    //           '</h6></div><h5 id="date">' +
-    //           article.date +
-    //           '</h5></div><a href="/thanasimiora/temp/template1.html?text=' +
-    //           encodeURIComponent(article.id) +
-    //           '"><h1 id="title">' +
-    //           article.title +
-    //           "</h1></a></div>";
-    //       });
-    //            if (newsEl) {
-    //   newsEl.innerHTML = filt + paginationnavbar;
-    // // } else if (newstemplate1) {
-    //   newstemplate1.innerHTML = filt + paginationnavbar;
-    //   document.getElementById("comments-section").innerHTML = "";
-    //   newstemplate1.id = "news";
+          filtered.forEach((article) => {
+            filt +=
+              '<div class="newscontainer"><div><div class="newsdiv"><a href="/thanasimiora/temp/template1.html?text=' +
+              encodeURIComponent(article.id) +
+              '"><img src="/thanasimiora/resources/images/' +
+              article.pic +
+              '.webp" alt="article" /></a><h6 class="category"> ' +
+              article.category +
+              '</h6></div><h5 id="date">' +
+              article.date +
+              '</h5></div><a href="/thanasimiora/temp/template1.html?text=' +
+              encodeURIComponent(article.id) +
+              '"><h1 id="title">' +
+              article.title +
+              "</h1></a></div>";
+          });
+               if (newsEl) {
+      newsEl.innerHTML = filt + paginationnavbar;
+    } else if (newstemplate1) {
+      newstemplate1.innerHTML = filt + paginationnavbar;
+      document.getElementById("comments-section").innerHTML = "";
+      newstemplate1.id = "news";
                   
-    // } else {
-    //   // oroi.innerHTML = "";
-    //   oroi.innerHTML = filt + paginationnavbar;
-    //   document.getElementById("comments-section").innerHTML = "";
+    } else {
+      oroi.innerHTML = "";
+      oroi.innerHTML = filt + paginationnavbar;
+      document.getElementById("comments-section").innerHTML = "";
                   
-  //          }
-  //       });
-  //     }
-  //   });
-  // }
+           }
+        });
+      }
+    });
+  }
   document.addEventListener("DOMContentLoaded", loadComments)
   createPagination();
 
