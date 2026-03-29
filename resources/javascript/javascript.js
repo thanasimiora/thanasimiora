@@ -1323,7 +1323,9 @@ function pages() {
           });
 
           newsEl.innerHTML = "";
+          newstemplate1.innerHTML = "";
         let filt="";
+          
           if (filtered.length === 0) {
             newsEl.innerHTML =
               '<p style="text-align:center">Δεν βρέθηκαν άρθρα.</p>';
@@ -1346,8 +1348,8 @@ function pages() {
               article.title +
               "</h1></a></div>";
           });
-          newsEl.innerHTML = filt;
-          newstemplate1.innerHTML = filt;
+          newsEl.innerHTML = filt + paginationnavbar;
+          newstemplate1.innerHTML = filt + paginationnavbar;
         });
       }
     });
