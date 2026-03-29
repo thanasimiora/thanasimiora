@@ -1354,12 +1354,12 @@ function pages() {
       newstemplate1.innerHTML = filt + paginationnavbar;
       document.getElementById("comments-section").innerHTML = "";
       newstemplate1.id = "news";
-                 return;
+                  
     } else {
       // oroi.innerHTML = "";
       oroi.innerHTML = filt + paginationnavbar;
       document.getElementById("comments-section").innerHTML = "";
-                 return;
+                  
            }
         });
       }
