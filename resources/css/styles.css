@@ -116,7 +116,7 @@ footer {
   justify-items: center;
 }
 #searchsubmit {
-  background-image: url("/resources/images/search.svg");
+  background-image: url("//resources/images/search.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain; /* Or a specific size like 20px 20px */
