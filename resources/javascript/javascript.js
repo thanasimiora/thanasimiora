@@ -1350,17 +1350,17 @@ function pages() {
           });
                if (newsEl) {
       newsEl.innerHTML = filt + paginationnavbar;
-    } else if (newstemplate1) {
-      newstemplate1.innerHTML = filt + paginationnavbar;
-      document.getElementById("comments-section").innerHTML = "";
-      newstemplate1.id = "news";
+    // } else if (newstemplate1) {
+    //   newstemplate1.innerHTML = filt + paginationnavbar;
+    //   document.getElementById("comments-section").innerHTML = "";
+    //   newstemplate1.id = "news";
                   
-    } else {
-      // oroi.innerHTML = "";
-      oroi.innerHTML = filt + paginationnavbar;
-      document.getElementById("comments-section").innerHTML = "";
+    // } else {
+    //   // oroi.innerHTML = "";
+    //   oroi.innerHTML = filt + paginationnavbar;
+    //   document.getElementById("comments-section").innerHTML = "";
                   
-           }
+    //        }
         });
       }
     });
