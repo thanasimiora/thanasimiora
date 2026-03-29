@@ -1349,18 +1349,17 @@ function pages() {
               article.title +
               "</h1></a></div>";
           });
-         if (result==undefined ) {
-           result=" ";
-         }
+        
+          
 if (newsEl) {
-      newsEl.innerHTML = result + paginationnavbar;
+      newsEl.innerHTML = filt + paginationnavbar;
     } else if (newstemplate1) {
-      newstemplate1.innerHTML = result + paginationnavbar;
+      newstemplate1.innerHTML = filt + paginationnavbar;
       document.getElementById("comments-section").innerHTML = "";
       newstemplate1.id = "news";
     } else {
       // oroi.innerHTML = "";
-      oroi.innerHTML = result + paginationnavbar;
+      oroi.innerHTML = filt + paginationnavbar;
       document.getElementById("comments-section").innerHTML = "";
     }
           pages();
