@@ -1365,7 +1365,7 @@ function pages() {
       }
     });
   }
-  document.addEventListener("DOMContentLoaded", loadComments)
+
   createPagination();
 
   showPage(1);
