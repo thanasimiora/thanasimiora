@@ -1307,6 +1307,7 @@ function pages() {
 
     // mpara anazitisis
     document.addEventListener("DOMContentLoaded", function () {
+         console.log("pressed");
       const searchButton = document.getElementById("searchsubmit");
       const searchInput = document.getElementById("searchInput");
 
