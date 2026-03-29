@@ -194,7 +194,7 @@ a {
   /* ... */
 
   will-change: transform;
-  animation: scrolling 15s linear infinite;
+  animation: scrolling 13s linear infinite;
 }
 
 @keyframes scrolling {
@@ -202,7 +202,7 @@ a {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 
