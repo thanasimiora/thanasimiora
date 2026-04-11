@@ -16,9 +16,9 @@ var articles = [
 '<img src="/thanasimiora/resources/images/artemiscrew3.webp" alt="artemiscrew" width="100%" >' +"</p><p>Κριστίνα Κουκ</p><p>"+
 '<img src="/thanasimiora/resources/images/artemiscrew4.webp" alt="artemiscrew" width="100%" >' +"</p><p>Ριντ Ουάιζμαν</p><p>"+
 "</p><p>Δυστυχώς τα στοιχεία είναι πολλά για να αγνοηθούν και αποκαλύπτουν τη μακάβρια αλήθεια. Ευχόμαστε μόνο η NASA να αποκομήσει κάτι ουσιώδες από αυτό και να αποκαλύψει επιτέλους την αλήθεια και να είναι ελαφρύ το σεληνιακό χώμα που σκεπάζει τους αστροναύτες μας. </p><p>Πρωτότυπες Εικόνες"+
-'<br><img src="https://x.com/NASA/status/2042821805807693910/photo/1" alt="artemiscrew" width="100%" >' +
-      '<br><img src="https://x.com/NASA/status/2042821805807693910/photo/2" alt="artemiscrew" width="100%" >' +
-      '<br><img src="https://i0.wp.com/spaceq.ca/wp-content/uploads/2025/10/better-orion-media-day-08-08-23-cropped.jpg?fit=1920%2C1280&ssl=1" alt="artemiscrew" width="100%" >'+ "</p>",
+'<br><a href="https://x.com/NASA/status/2042821805807693910/photo/1">Εικόνα Επιστοφής 1</a>' +
+      '<br><a href="https://x.com/NASA/status/2042821805807693910/photo/2">Εικόνα Επιστοφής 2</a>' +
+      '<br><a href="https://i0.wp.com/spaceq.ca/wp-content/uploads/2025/10/better-orion-media-day-08-08-23-cropped.jpg?fit=1920%2C1280&ssl=1">Εικόνα προ Αναχώρησης</a>'+ "</p>",
      },
   {
     id: 112,
