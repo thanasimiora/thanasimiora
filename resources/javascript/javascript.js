@@ -5,7 +5,7 @@ var articles = [
  {
     id: 125,
     date: "25/4/2026",
-    title: "Το Μάτι του Horus: Το Τρίτο Μάτι του Εγκεφάλου",
+    title: "Το Μάτι του Horus ως το Τρίτο Μάτι του Εγκεφάλου",
     pic: "horus",
     category: "ΕΠΙΣΤΗΜΕΣ",
     author: "Idi Amin Dada Oumee",
