@@ -1638,7 +1638,7 @@ const paginationnavbar =
 const adleft =
   '<a href="https:////www.pakohart.gr"          ><img class="ads" src="/thanasimiora/resources/ads/ad1.gif" alt="ad1"        /></a>        <a          href="https:////www.facebook.com/p/%CE%93%CE%A1%CE%91%CE%A6%CE%95%CE%99%CE%9F-%CE%A4%CE%95%CE%9B%CE%95%CE%A4%CE%A9%CE%9D-%CE%A4%CE%9F-%CE%93%CE%A1%CE%97%CE%93%CE%9F%CE%A1%CE%9F-%CE%A6%CE%A4%CE%A5%CE%91%CE%A1%CE%99-100067909448422/"          ><img class="ads" src="/thanasimiora/resources/ads/ad2.webp" alt="ad2"        /></a> <a          href="#"          ><img class="ads" src="/thanasimiora/resources/ads/ad3.gif" alt="ad3"        /></a><a          href="#"          ><img class="ads" src="/thanasimiora/resources/ads/ad4.webp" alt="ad4"        /></a>';
 const adright =
-  ' <a href="https:////big-hunter.gr"            ><img              class="ads"              src="/thanasimiora/resources/ads/adb.webp"              alt="ada"          /></a>          <a href="https:////www.verettasbooks.gr"            ><img              class="ads"              src="/thanasimiora/resources/ads/ada.gif"              alt="adb"          /></a> <a          href="#"          ><img class="ads" src="/thanasimiora/resources/ads/adc.webp" alt="adc"        /></a> <a          href="#"          ><img class="ads" src="/thanasimiora/resources/ads/add.webp" alt="add"        /></a>';
+  ' <a href="https:////big-hunter.gr"            ><img              class="ads"              src="/thanasimiora/resources/ads/adb.webp"              alt="ada"          /></a>          <a href="https:////www.verettasbooks.gr"            ><img              class="ads"              src="/thanasimiora/resources/ads/ada.gif"              alt="adb"          /></a> <a          href="#"          ><img class="ads" src="/thanasimiora/resources/ads/adc.webp" alt="adc"        /></a>';
 
 //ta divs stis selides
 const newsEl = document.getElementById("news");
@@ -1876,29 +1876,10 @@ function pages() {
 
     // Keep your search bar event listener registration right below here intact:
     // [Your existing document.addEventListener("DOMContentLoaded", ...) code goes here]
-  
+
     // mpara anazitisis
 
- 
-          if (newsEl) {
-            newsEl.innerHTML = filt + paginationnavbar;
-          } else if (newstemplate1) {
-            newstemplate1.innerHTML = filt + paginationnavbar;
-            document.getElementById("comments-section").innerHTML = "";
-            newstemplate1.id = "news";
-          } else {
-            // oroi.innerHTML = "";
-            oroi.innerHTML = filt + paginationnavbar;
-            document.getElementById("comments-section").innerHTML = "";
-          }
-          pages();
-          createPagination();
-          console.log(paginationnavbar);
-        });
-      }
-    });
-  }
-   document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function () {
       console.log("pressed");
       const searchButton = document.getElementById("searchsubmit");
       const searchInput = document.getElementById("searchInput");
@@ -1939,7 +1920,26 @@ function pages() {
               "</h1></a></div>";
           });
 
-createPagination();
+          if (newsEl) {
+            newsEl.innerHTML = filt + paginationnavbar;
+          } else if (newstemplate1) {
+            newstemplate1.innerHTML = filt + paginationnavbar;
+            document.getElementById("comments-section").innerHTML = "";
+            newstemplate1.id = "news";
+          } else {
+            // oroi.innerHTML = "";
+            oroi.innerHTML = filt + paginationnavbar;
+            document.getElementById("comments-section").innerHTML = "";
+          }
+          pages();
+          createPagination();
+          console.log(paginationnavbar);
+        });
+      }
+    });
+  }
+
+  createPagination();
 
   showPage(1);
 }
