@@ -1787,7 +1787,7 @@ function pages() {
 
   const pageCount = Math.ceil(items.length / itemsPerPage);
 
-function showPage(page) {
+  function showPage(page) {
     items.forEach((item, index) => {
       item.style.display =
         index >= (page - 1) * itemsPerPage && index < page * itemsPerPage
@@ -1802,7 +1802,7 @@ function showPage(page) {
     document
       .querySelectorAll(".page-item")
       .forEach((li) => li.classList.remove("active"));
-      
+
     const activeLi = document.getElementById(`page-${page}`);
     if (activeLi) {
       activeLi.classList.add("active");
@@ -1816,23 +1816,23 @@ function showPage(page) {
 
     const batchSize = 10;
     const currentBatch = Math.floor((page - 1) / batchSize);
-    const startPage = (currentBatch * batchSize) + 1;
+    const startPage = currentBatch * batchSize + 1;
     const endPage = Math.min(startPage + batchSize - 1, pageCount);
 
     // 1. "Previous 10 Pages" Arrow (‹‹)
     if (startPage > 1) {
       const li = document.createElement("li");
       li.className = "page-item";
-      
+
       const a = document.createElement("a");
       a.className = "page-link";
       a.href = "#";
-      a.innerHTML = "&laquo; Πίσω 10";
+      a.innerText = "<";
       a.onclick = (e) => {
         e.preventDefault();
         showPage(startPage - 1); // Jumps to the last page of the previous batch
       };
-      
+
       li.appendChild(a);
       pagination.appendChild(li);
     }
@@ -1860,23 +1860,22 @@ function showPage(page) {
     if (endPage < pageCount) {
       const li = document.createElement("li");
       li.className = "page-item";
-      
+
       const a = document.createElement("a");
       a.className = "page-link";
       a.href = "#";
-      a.innerHTML = "Επόμενα 10 &raquo;";
+      a.innerText = ">";
       a.onclick = (e) => {
         e.preventDefault();
         showPage(endPage + 1); // Jumps to the first page of the next batch
       };
-      
+
       li.appendChild(a);
       pagination.appendChild(li);
     }
 
     // Keep your search bar event listener registration right below here intact:
     // [Your existing document.addEventListener("DOMContentLoaded", ...) code goes here]
-  }
 
     // mpara anazitisis
 
