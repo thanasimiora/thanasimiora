@@ -1884,8 +1884,7 @@ function pages() {
       const searchButton = document.getElementById("searchsubmit");
       const searchInput = document.getElementById("searchInput");
 
-      if (searchButton) {
-        searchButton.addEventListener("click", function () {
+     searchButton.addEventListener("click", function () {
           let input = searchInput.value.toLowerCase();
 
           let filtered = articles.filter((article) => {
@@ -1935,7 +1934,7 @@ function pages() {
           createPagination();
           console.log(paginationnavbar);
         });
-      }
+      
     });
   }
 
