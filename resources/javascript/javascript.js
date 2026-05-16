@@ -1876,7 +1876,9 @@ function pages() {
 
     // Keep your search bar event listener registration right below here intact:
     // [Your existing document.addEventListener("DOMContentLoaded", ...) code goes here]
+  createPagination();
 
+  showPage(1);
     // mpara anazitisis
 
     document.addEventListener("DOMContentLoaded", function () {
@@ -1939,7 +1941,5 @@ function pages() {
     });
   }
 
-  createPagination();
 
-  showPage(1);
 }
