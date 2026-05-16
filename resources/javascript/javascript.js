@@ -1803,67 +1803,36 @@ function pages() {
 
   //selidopoihsi
   function createPagination() {
-  // Assuming 'totalPages' and 'currentPage' are already defined globally in your script
-  let paginationHTML = '<div class="pagination">';
-  
-  // 1. Calculate the current batch of 10
+  paginationnavbar = '<div class="pagination">';
+
+  // 1. Calculate batches of 10 pages
   const batchSize = 10;
   const currentBatch = Math.floor((currentPage - 1) / batchSize);
   const startPage = (currentBatch * batchSize) + 1;
   const endPage = Math.min(startPage + batchSize - 1, totalPages);
 
-  // 2. "Previous 10 Pages" Arrow (‹‹)
-  // Only show or enable if we are past the first batch (page > 10)
+  // 2. Previous 10 Pages Arrow
   if (startPage > 1) {
     const prevBatchPage = startPage - 1;
-    paginationHTML += `<a href="#" class="page-link prev-batch" onclick="goToPage(${prevBatchPage}); return false;">&laquo; Prev 10</a>`;
-  } else {
-    // Optional: Disabled appearance if on the first batch
-    paginationHTML += `<span class="page-link disabled">&laquo; Prev 10</span>`;
+    paginationnavbar += `<a href="#" class="page-link" onclick="showPage(${prevBatchPage}); return false;">&laquo; Πίσω 10</a>`;
   }
 
-  // 3. Regular "Previous Single Page" Arrow (‹) - Optional but helpful
-  if (currentPage > 1) {
-    paginationHTML += `<a href="#" class="page-link" onclick="goToPage(${currentPage - 1}); return false;">&lsaquo;</a>`;
-  }
-
-  // 4. Loop through only the current batch of 10 pages
+  // 3. Render only the 10 pages of the current batch
   for (let i = startPage; i <= endPage; i++) {
     if (i === currentPage) {
-      paginationHTML += `<span class="page-link active">${i}</span>`;
+      paginationnavbar += `<span class="page-link active">${i}</span>`;
     } else {
-      paginationHTML += `<a href="#" class="page-link" onclick="goToPage(${i}); return false;">${i}</a>`;
+      paginationnavbar += `<a href="#" class="page-link" onclick="showPage(${i}); return false;">${i}</a>`;
     }
   }
 
-  // 5. Regular "Next Single Page" Arrow (›) - Optional
-  if (currentPage < totalPages) {
-    paginationHTML += `<a href="#" class="page-link" onclick="goToPage(${currentPage + 1}); return false;">&rsaquo;</a>`;
-  }
-
-  // 6. "Next 10 Pages" Arrow (››)
-  // Only show or enable if there are more pages beyond the current batch
+  // 4. Next 10 Pages Arrow
   if (endPage < totalPages) {
     const nextBatchPage = endPage + 1;
-    paginationHTML += `<a href="#" class="page-link next-batch" onclick="goToPage(${nextBatchPage}); return false;">Next 10 &raquo;</a>`;
-  } else {
-    // Optional: Disabled appearance if on the last batch
-    paginationHTML += `<span class="page-link disabled">Next 10 &raquo;</span>`;
+    paginationnavbar += `<a href="#" class="page-link" onclick="showPage(${nextBatchPage}); return false;">Επόμενα 10 &raquo;</a>`;
   }
 
-  paginationHTML += '</div>';
-
-  // Update your global navigation bar variable
-  paginationnavbar = paginationHTML; 
-}
-
-// Helper function to handle the page changing mechanism
-function goToPage(pageNumber) {
-  currentPage = pageNumber;
-  
-  // Call your existing function that filters articles and re-renders the view
-  // Based on your script, this likely triggers the logic inside your event listeners
-  renderArticles(); 
+  paginationnavbar += '</div>';
 }
 
     // mpara anazitisis
