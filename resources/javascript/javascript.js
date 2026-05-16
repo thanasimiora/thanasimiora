@@ -1876,12 +1876,29 @@ function pages() {
 
     // Keep your search bar event listener registration right below here intact:
     // [Your existing document.addEventListener("DOMContentLoaded", ...) code goes here]
-  createPagination();
-
-  showPage(1);
+  
     // mpara anazitisis
 
-    document.addEventListener("DOMContentLoaded", function () {
+ 
+          if (newsEl) {
+            newsEl.innerHTML = filt + paginationnavbar;
+          } else if (newstemplate1) {
+            newstemplate1.innerHTML = filt + paginationnavbar;
+            document.getElementById("comments-section").innerHTML = "";
+            newstemplate1.id = "news";
+          } else {
+            // oroi.innerHTML = "";
+            oroi.innerHTML = filt + paginationnavbar;
+            document.getElementById("comments-section").innerHTML = "";
+          }
+          pages();
+          createPagination();
+          console.log(paginationnavbar);
+        });
+      }
+    });
+  }
+   document.addEventListener("DOMContentLoaded", function () {
       console.log("pressed");
       const searchButton = document.getElementById("searchsubmit");
       const searchInput = document.getElementById("searchInput");
@@ -1922,24 +1939,7 @@ function pages() {
               "</h1></a></div>";
           });
 
-          if (newsEl) {
-            newsEl.innerHTML = filt + paginationnavbar;
-          } else if (newstemplate1) {
-            newstemplate1.innerHTML = filt + paginationnavbar;
-            document.getElementById("comments-section").innerHTML = "";
-            newstemplate1.id = "news";
-          } else {
-            // oroi.innerHTML = "";
-            oroi.innerHTML = filt + paginationnavbar;
-            document.getElementById("comments-section").innerHTML = "";
-          }
-          pages();
-          createPagination();
-          console.log(paginationnavbar);
-        });
-      }
-    });
-  }
+createPagination();
 
-
+  showPage(1);
 }
