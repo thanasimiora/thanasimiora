@@ -1787,7 +1787,7 @@ function pages() {
 
   const pageCount = Math.ceil(items.length / itemsPerPage);
 
-  function showPage(page) {
+function showPage(page) {
     items.forEach((item, index) => {
       item.style.display =
         index >= (page - 1) * itemsPerPage && index < page * itemsPerPage
@@ -1795,15 +1795,50 @@ function pages() {
           : "none";
     });
 
+    // 1. Re-render the pagination layout for the current page batch
+    createPagination(page);
+
+    // 2. Remove active state from old buttons and highlight the current page button
     document
       .querySelectorAll(".page-item")
       .forEach((li) => li.classList.remove("active"));
-    document.getElementById(`page-${page}`).classList.add("active");
+      
+    const activeLi = document.getElementById(`page-${page}`);
+    if (activeLi) {
+      activeLi.classList.add("active");
+    }
   }
 
   //selidopoihsi
-  function createPagination() {
-    for (let i = 1; i <= pageCount; i++) {
+  function createPagination(page = 1) {
+    // Clear any existing pagination buttons before drawing the new batch
+    pagination.innerHTML = "";
+
+    const batchSize = 10;
+    const currentBatch = Math.floor((page - 1) / batchSize);
+    const startPage = (currentBatch * batchSize) + 1;
+    const endPage = Math.min(startPage + batchSize - 1, pageCount);
+
+    // 1. "Previous 10 Pages" Arrow (‹‹)
+    if (startPage > 1) {
+      const li = document.createElement("li");
+      li.className = "page-item";
+      
+      const a = document.createElement("a");
+      a.className = "page-link";
+      a.href = "#";
+      a.innerHTML = "&laquo; Πίσω 10";
+      a.onclick = (e) => {
+        e.preventDefault();
+        showPage(startPage - 1); // Jumps to the last page of the previous batch
+      };
+      
+      li.appendChild(a);
+      pagination.appendChild(li);
+    }
+
+    // 2. Render only the 10 page numbers belonging to the current batch
+    for (let i = startPage; i <= endPage; i++) {
       const li = document.createElement("li");
       li.className = "page-item";
       li.id = `page-${i}`;
@@ -1820,6 +1855,28 @@ function pages() {
       li.appendChild(a);
       pagination.appendChild(li);
     }
+
+    // 3. "Next 10 Pages" Arrow (››)
+    if (endPage < pageCount) {
+      const li = document.createElement("li");
+      li.className = "page-item";
+      
+      const a = document.createElement("a");
+      a.className = "page-link";
+      a.href = "#";
+      a.innerHTML = "Επόμενα 10 &raquo;";
+      a.onclick = (e) => {
+        e.preventDefault();
+        showPage(endPage + 1); // Jumps to the first page of the next batch
+      };
+      
+      li.appendChild(a);
+      pagination.appendChild(li);
+    }
+
+    // Keep your search bar event listener registration right below here intact:
+    // [Your existing document.addEventListener("DOMContentLoaded", ...) code goes here]
+  }
 
     // mpara anazitisis
 
