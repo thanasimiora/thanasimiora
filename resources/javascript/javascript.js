@@ -1884,7 +1884,7 @@ function pages() {
       const searchButton = document.getElementById("searchsubmit");
       const searchInput = document.getElementById("searchInput");
 
-     
+      if (searchButton) {
         searchButton.addEventListener("click", function () {
           let input = searchInput.value.toLowerCase();
 
@@ -1901,7 +1901,7 @@ function pages() {
             newsEl.innerHTML =
               '<p style="text-align:center">Δεν βρέθηκαν άρθρα.</p>';
             return;
-          
+          }
 
           filtered.forEach((article) => {
             filt +=
