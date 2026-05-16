@@ -1894,10 +1894,8 @@ function pages() {
     // [Your existing document.addEventListener("DOMContentLoaded", ...) code goes here]
 
     // mpara anazitisis
-    // Define the logic you want to run as a clean, standalone function
-    function initializeMyPageLogic() {
-      console.log("DOM is completely ready and elements are safely generated!");
-      // Put all your target code lines here...
+
+    function searchbar() {
       console.log("pressed");
       const searchButton = document.getElementById("searchsubmit");
       const searchInput = document.getElementById("searchInput");
@@ -1954,18 +1952,14 @@ function pages() {
           console.log(paginationnavbar);
         });
       }
+    };
+  }
+if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", searchbar);
+    } else {
+        // If the browser already missed the DOMContentLoaded event, force run immediately
+        runMyCode();
     }
-  }
-
-  // Safely execute it regardless of the page lifecycle state
-  if (document.readyState === "loading") {
-    // If the browser is still parsing the initial HTML shell, wait for it
-    document.addEventListener("DOMContentLoaded", initializeMyPageLogic);
-  } else {
-    // If the browser already finished parsing (common in template1.html), run it immediately!
-    initializeMyPageLogic();
-  }
-
   createPagination();
 
   showPage(1);
