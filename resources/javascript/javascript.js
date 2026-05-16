@@ -1803,37 +1803,23 @@ function pages() {
 
   //selidopoihsi
   function createPagination() {
-  paginationnavbar = '<div class="pagination">';
+    for (let i = 1; i <= pageCount; i++) {
+      const li = document.createElement("li");
+      li.className = "page-item";
+      li.id = `page-${i}`;
 
-  // 1. Calculate batches of 10 pages
-  const batchSize = 10;
-  const currentBatch = Math.floor((currentPage - 1) / batchSize);
-  const startPage = (currentBatch * batchSize) + 1;
-  const endPage = Math.min(startPage + batchSize - 1, totalPages);
+      const a = document.createElement("a");
+      a.className = "page-link";
+      a.href = "#";
+      a.innerText = i;
+      a.onclick = (e) => {
+        e.preventDefault();
+        showPage(i);
+      };
 
-  // 2. Previous 10 Pages Arrow
-  if (startPage > 1) {
-    const prevBatchPage = startPage - 1;
-    paginationnavbar += `<a href="#" class="page-link" onclick="showPage(${prevBatchPage}); return false;">&laquo; Πίσω 10</a>`;
-  }
-
-  // 3. Render only the 10 pages of the current batch
-  for (let i = startPage; i <= endPage; i++) {
-    if (i === currentPage) {
-      paginationnavbar += `<span class="page-link active">${i}</span>`;
-    } else {
-      paginationnavbar += `<a href="#" class="page-link" onclick="showPage(${i}); return false;">${i}</a>`;
+      li.appendChild(a);
+      pagination.appendChild(li);
     }
-  }
-
-  // 4. Next 10 Pages Arrow
-  if (endPage < totalPages) {
-    const nextBatchPage = endPage + 1;
-    paginationnavbar += `<a href="#" class="page-link" onclick="showPage(${nextBatchPage}); return false;">Επόμενα 10 &raquo;</a>`;
-  }
-
-  paginationnavbar += '</div>';
-}
 
     // mpara anazitisis
 
