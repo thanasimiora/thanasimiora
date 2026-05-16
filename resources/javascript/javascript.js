@@ -1803,23 +1803,68 @@ function pages() {
 
   //selidopoihsi
   function createPagination() {
-    for (let i = 1; i <= pageCount; i++) {
-      const li = document.createElement("li");
-      li.className = "page-item";
-      li.id = `page-${i}`;
+  // Assuming 'totalPages' and 'currentPage' are already defined globally in your script
+  let paginationHTML = '<div class="pagination">';
+  
+  // 1. Calculate the current batch of 10
+  const batchSize = 10;
+  const currentBatch = Math.floor((currentPage - 1) / batchSize);
+  const startPage = (currentBatch * batchSize) + 1;
+  const endPage = Math.min(startPage + batchSize - 1, totalPages);
 
-      const a = document.createElement("a");
-      a.className = "page-link";
-      a.href = "#";
-      a.innerText = i;
-      a.onclick = (e) => {
-        e.preventDefault();
-        showPage(i);
-      };
+  // 2. "Previous 10 Pages" Arrow (‹‹)
+  // Only show or enable if we are past the first batch (page > 10)
+  if (startPage > 1) {
+    const prevBatchPage = startPage - 1;
+    paginationHTML += `<a href="#" class="page-link prev-batch" onclick="goToPage(${prevBatchPage}); return false;">&laquo; Prev 10</a>`;
+  } else {
+    // Optional: Disabled appearance if on the first batch
+    paginationHTML += `<span class="page-link disabled">&laquo; Prev 10</span>`;
+  }
 
-      li.appendChild(a);
-      pagination.appendChild(li);
+  // 3. Regular "Previous Single Page" Arrow (‹) - Optional but helpful
+  if (currentPage > 1) {
+    paginationHTML += `<a href="#" class="page-link" onclick="goToPage(${currentPage - 1}); return false;">&lsaquo;</a>`;
+  }
+
+  // 4. Loop through only the current batch of 10 pages
+  for (let i = startPage; i <= endPage; i++) {
+    if (i === currentPage) {
+      paginationHTML += `<span class="page-link active">${i}</span>`;
+    } else {
+      paginationHTML += `<a href="#" class="page-link" onclick="goToPage(${i}); return false;">${i}</a>`;
     }
+  }
+
+  // 5. Regular "Next Single Page" Arrow (›) - Optional
+  if (currentPage < totalPages) {
+    paginationHTML += `<a href="#" class="page-link" onclick="goToPage(${currentPage + 1}); return false;">&rsaquo;</a>`;
+  }
+
+  // 6. "Next 10 Pages" Arrow (››)
+  // Only show or enable if there are more pages beyond the current batch
+  if (endPage < totalPages) {
+    const nextBatchPage = endPage + 1;
+    paginationHTML += `<a href="#" class="page-link next-batch" onclick="goToPage(${nextBatchPage}); return false;">Next 10 &raquo;</a>`;
+  } else {
+    // Optional: Disabled appearance if on the last batch
+    paginationHTML += `<span class="page-link disabled">Next 10 &raquo;</span>`;
+  }
+
+  paginationHTML += '</div>';
+
+  // Update your global navigation bar variable
+  paginationnavbar = paginationHTML; 
+}
+
+// Helper function to handle the page changing mechanism
+function goToPage(pageNumber) {
+  currentPage = pageNumber;
+  
+  // Call your existing function that filters articles and re-renders the view
+  // Based on your script, this likely triggers the logic inside your event listeners
+  renderArticles(); 
+}
 
     // mpara anazitisis
 
