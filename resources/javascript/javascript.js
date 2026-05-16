@@ -1818,70 +1818,25 @@ function pages() {
   }
 
   //selidopoihsi
-  // function createPagination() {
-  //   for (let i = 1; i <= pageCount; i++) {
-  //     const li = document.createElement("li");
-  //     li.className = "page-item";
-  //     li.id = `page-${i}`;
+  function createPagination() {
+    for (let i = 1; i <= pageCount; i++) {
+      const li = document.createElement("li");
+      li.className = "page-item";
+      li.id = `page-${i}`;
 
-  //     const a = document.createElement("a");
-  //     a.className = "page-link";
-  //     a.href = "#";
-  //     a.innerText = i;
-  //     a.onclick = (e) => {
-  //       e.preventDefault();
-  //       showPage(i);
-  //     };
+      const a = document.createElement("a");
+      a.className = "page-link";
+      a.href = "#";
+      a.innerText = i;
+      a.onclick = (e) => {
+        e.preventDefault();
+        showPage(i);
+      };
 
-  //     li.appendChild(a);
-  //     pagination.appendChild(li);
-  //   }
-// Assuming these variables are defined globally or within your function scope:
-// currentPage: the currently active page (1-indexed)
-// totalPages: total number of pages based on filtered articles / itemsPerPage
-
-function createPagination() {
-  let paginationnavbar = '<nav aria-label="Page navigation"><ul class="pagination">';
-  
-  // 1. Calculate the current "chunk" or "window" of 10 pages
-  // Example: If currentPage is 13, currentChunk is 1 (0-indexed), showing pages 11-20
-  const currentChunk = Math.floor((currentPage - 1) / 10);
-  const startPage = currentChunk * 10 + 1;
-  const endPage = Math.min(startPage + 9, totalPages);
-
-  // 2. "Previous 10 Pages" Button
-  // Only shows or becomes active if we are past the first chunk (page > 10)
-  if (startPage > 1) {
-    const prev10Page = startPage - 1;
-    paginationnavbar += `<li class="page-item"><a class="page-link" href="#" onclick="changePage(${prev10Page})">&laquo; Prev 10</a></li>`;
-  } else {
-    // Optional: Disabled state if you want it visible but unclickable
-    paginationnavbar += `<li class="page-item disabled"><span class="page-link">&laquo; Prev 10</span></li>`;
-  }
-
-  // 3. Render the 10 Page Numbers
-  for (let i = startPage; i <= endPage; i++) {
-    if (i === currentPage) {
-      paginationnavbar += `<li class="page-item active"><span class="page-link">${i}</span></li>`;
-    } else {
-      paginationnavbar += `<li class="page-item"><a class="page-link" href="#" onclick="changePage(${i})">${i}</a></li>`;
+      li.appendChild(a);
+      pagination.appendChild(li);
     }
-  }
 
-  // 4. "Next 10 Pages" Button
-  // Only shows or becomes active if there are more pages beyond the current chunk
-  if (endPage < totalPages) {
-    const next10Page = endPage + 1;
-    paginationnavbar += `<li class="page-item"><a class="page-link" href="#" onclick="changePage(${next10Page})">Next 10 &raquo;</a></li>`;
-  } else {
-    // Optional: Disabled state
-    paginationnavbar += `<li class="page-item disabled"><span class="page-link">Next 10 &raquo;</span></li>`;
-  }
-
-  paginationnavbar += '</ul></nav>';
-
-  // Update your DOM element here with the new paginationnavbar string
-  // e.g., newsEl.innerHTML = filt + paginationnavbar;
 }
     // mpara anazitisis
 
