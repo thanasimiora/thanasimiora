@@ -1879,7 +1879,7 @@ function pages() {
 
     // mpara anazitisis
 
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("onload", function () {
       console.log("pressed");
       const searchButton = document.getElementById("searchsubmit");
       const searchInput = document.getElementById("searchInput");
