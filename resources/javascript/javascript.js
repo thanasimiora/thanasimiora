@@ -5,7 +5,7 @@
           {
     id: 150,
     date: "21/5/2026",
-    title: "Η Ηπειριώτικη Χάρη του Βάαλ",
+    title: "Η Ηπυρρώτικη Χάρη του Βάαλ",
     pic: "baal",
     category: "ΙΣΤΟΡΙΑ",
     author: "Idi Amin Dada Oumee",
