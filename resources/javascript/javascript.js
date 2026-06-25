@@ -25,7 +25,7 @@
                  {
     id: 172,
     date: "17/6/2026",
-    title: "Όταν Κάποιοι Ψάχνουν Για Χαλκό",
+    title: "..Ενώ Κάποιοι Ψάχνουν Για Χαλκό",
     pic: "xalkos",
     category: "ΠΟΛΙΤΙΣΜΟΣ",
     author: "Idi Amin Dada Oumee",
