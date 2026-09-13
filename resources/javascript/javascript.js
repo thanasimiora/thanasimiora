@@ -14,7 +14,7 @@
   //       }, 
      {
   id: 206,
-    date: "13/9/2026",
+    date: "14/9/2026",
     title: "Το Μυστικό των Σπηλαίων",
     pic: "palaiolithiccannibals",
     category: "ΠΟΛΙΤΙΣΜΟΣ",
@@ -28,7 +28,7 @@
   }, 
       {
   id: 205,
-    date: "14/9/2026",
+    date: "13/9/2026",
     title: "Ο Γέρος και το Iphone",
     pic: "geroskaihthalassa",
     category: "ΠΟΛΙΤΙΣΜΟΣ",
