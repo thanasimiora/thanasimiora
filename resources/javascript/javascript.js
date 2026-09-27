@@ -5,7 +5,7 @@
 //       {
 //   id: 211,
 //     date: "28/9/2026",
-//     title: "",
+//     title: "Η Παγίδα των Φαραωνικών Έργων: Όταν η Αρχιτεκτονική Αλαζονεία Φέρνει την Κατάρρευση",
 //     pic: "ktiriantp",
 //     category: "ΟΙΚΟΝΟΜΙΑ",
 //        author: "Idi Amin Dada Oumee",
@@ -17,7 +17,7 @@
 //        {
 //   id: 210,
 //     date: "25/9/2026",
-//     title: "",
+//     title: "Το Όραμα του Ηρακλείου ως Λύση στο Σήμερα",
 //     pic: "themata21aiwna",
 //     category: "ΟΙΚΟΝΟΜΙΑ",
 //        author: "ROBERT MUGABE jr",
